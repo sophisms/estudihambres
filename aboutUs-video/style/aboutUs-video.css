@@ -32,6 +32,10 @@
     color: var(--colorSecondaryText);
 }
 
+.drop i:hover {
+    color: var(--colorMainHover);
+}
+
 /*
 iframe {
     display: block;
