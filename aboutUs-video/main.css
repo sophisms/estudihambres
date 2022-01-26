@@ -1,7 +1,7 @@
 /*============================ TEMPLATE STYLE ===========================*/
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
 
-@import "/style/aboutUs-video.css";
+@import "./style/aboutUs-video.css";
 
 :root {
 /*============================  COLORS ===========================*/
