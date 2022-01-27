@@ -1,3 +1,5 @@
+@import url("../../global/css/variables.css");
+
 #video-abouUs {
     font-family: var(--font-body);
 }
@@ -36,6 +38,37 @@
     color: var(--colorMainHover);
 }
 
+.drop-rotate{
+    transform: rotate(180deg);
+}
+
+.drop-active {
+    height: 230px !important;
+}
+
+.card-description {
+    height: 0px;
+    transition: all 0.6s ease;
+}
+
+.card-description-text h3{
+    font-size: var(--fontH3Size);
+    font-family: var(--font-title);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    color:var(--colorSecondarySubtitles);
+    padding: 2px 10px;
+    border-bottom: 1px solid rgb(48, 47, 47);
+
+}
+
+.card-description-text p{
+    font-family: var(--font-body);
+    font-size: var(--fontNormalSize);
+    padding: 2px 10px;
+    text-align: justify;
+
+}
 /*
 iframe {
     display: block;
