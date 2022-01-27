@@ -1,0 +1,36 @@
+.desaparece {
+  /* Aqui se le añade un color de fondo y se desaparece el texto */
+  background-color: rgba(122, 122, 122, 0.9);
+  visibility: hidden !important;
+}
+
+.imagen:hover {
+  /* Se agranda la imagen al pasar el puntero */
+  width: 100% !important;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.imagen figure:hover > img {
+  /* Aqui se quita el redondeado */
+  border-radius: 5px !important;
+  transition: 1s;
+  width: 100% !important;
+}
+
+.imagen figure:hover > .desaparece {
+  /* Se hace visible lo invisible */
+  visibility: visible !important;
+}
+
+.imagen figure:hover > .desaparece h4 {
+  /* aqui se hace el efecto de juntarse */
+  margin-top: 15px;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+
+.imagen figure .desaparece h4 {
+  /* aqui se aleja el texxto */
+  margin-bottom: 160px;
+}
