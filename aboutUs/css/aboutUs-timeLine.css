@@ -1,0 +1,85 @@
+/*esto es la linea central */
+.timeline {
+  position: relative;
+}
+ .timeline::before { /* estilo*/
+  content: '';
+  background: #000000;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*esto son los contenedores */
+
+.timeline-item {
+  width: 100%;
+  margin-bottom: 50px; /*separcacion entre tarejetas*/
+}
+.timeline-item::after { /*este codigoes para hacerlo escalonado*/
+  content: '';
+  display: block;
+  clear: both;
+}
+/*los contenedores pare (losde la derecha)*/
+.timeline-item:nth-child(even) .timeline-content { 
+  float: right;
+  padding: 40px 30px 10px 30px;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background: #afafaf; /*fondo de los contenedores*/
+}
+
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: -15px;
+  
+}
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: -15px;
+}
+/*este es el estylo de la fecha*/
+
+.date {
+  background: #000000;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.timeline-item:nth-child(even) .date {
+  width:fit-content;
+  background: #000000;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.point-line{
+  width: 30px;
+	height: 30px;
+	background: #afafaf;
+	border-radius: 30%;
+	position: absolute;
+	left: 50%;
+	margin-top: 25px;
+	margin-left: -15px;
+}
