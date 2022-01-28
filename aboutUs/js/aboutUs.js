@@ -22,6 +22,18 @@ $(function () {
 });
 
 // aboutUs-Contact Form Request
+Email.send({
+    Host: "smtp.yourisp.com",
+    Username: "username",
+    Password: "password",
+    To: 'them@website.com',
+    From: "you@isp.com",
+    Subject: "This is the subject",
+    Body: "And this is the body"
+}).then(
+    message => alert(message)
+);
+/*
 //Requerimos el paquete
 var nodemailer = require("nodemailer");
 
@@ -52,4 +64,4 @@ transporter.sendMail(mailOptions, function (error, info) {
     } else {
         console.log("Email enviado: " + info.response);
     }
-});
+});*/
