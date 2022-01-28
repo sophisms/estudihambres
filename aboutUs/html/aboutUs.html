@@ -46,13 +46,53 @@
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Busca tu clase" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    <button class="btn btn-primary ms-lg-4" type="submit">Login</button>
+                    <button class="btn btn-outline-success me-2" type="submit">Buscar</button>
+                    <a href="#login" data-bs-toggle="modal" class="btn btn-dark">Login</a>
                 </form>
 
             </div>
         </div>
     </nav>
+
+    <!-- modal de login  -->
+    <div class="modal fade" id="login" aria-labelledby="compraLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <div class="card bg-dark text-white ">
+                        <img src="https://www.questionpro.com/blog/wp-content/uploads/2018/08/Encuestas-estudiantes-768x512.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Inicio de sesion</h3>
+                            <p class="card-text">Bienvenido a la mejor plataforma de aprendizaje. Aqui inicia la
+                                aventura</p>
+                            <div class="fb-login-button text-center align-bottom" data-width="" data-size="large"
+                                data-button-type="continue_with" data-layout="default" data-auto-logout-link="false"
+                                data-use-continue-as="false"></div>
+                            <br><br>
+                            <p>O ingrese con su correo</p>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="nombre@ejemplo.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">password</label>
+                                <input type="password" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="****">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Ingresar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal de login  -->
+
     <!-- /Header -->
 
     <!-- Start of Carousel-->
@@ -69,21 +109,21 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="../../global/assets/images/gray1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
+                    <div class="carousel-caption d-none d-md-block text-black">
+                        <h5>Slogan</h5>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="../../global/assets/images/gray2.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block text-black">
                         <h5>Second slide label</h5>
                         <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="../../global/assets/images/gray3.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block text-black">
                         <h5>Third slide label</h5>
                         <p>Some representative placeholder content for the third slide.</p>
                     </div>
@@ -161,8 +201,8 @@
             <div class="container text-white">
                 <h2 class="text-center">Nosotros</h2>
                 <div class="row text-center ms-5 py-4">
-                    <div class="col-12 col-sm-6 col-md-3 taco">
-                        <div class="card img-fluid imagen bg-dark w-75">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card img-fluid imagen bg-dark w-75 border-0">
                             <figure>
                                 <img class="card-img-top rounded-circle" src="../../global/assets/images/ariel.jpg"
                                     alt="Card image" style="width:100%">
@@ -176,8 +216,8 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 taco">
-                        <div class="card img-fluid imagen bg-dark w-75">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card img-fluid imagen bg-dark w-75 border-0">
                             <figure>
                                 <img class="card-img-top rounded-circle" src="../../global/assets/images/starlord.jpg"
                                     alt="Card image" style="width:100%">
@@ -191,8 +231,8 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 taco">
-                        <div class="card img-fluid imagen bg-dark w-75">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card img-fluid imagen bg-dark w-75 border-0">
                             <figure>
                                 <img class="card-img-top rounded-circle" src="../../global/assets/images/vanellope.jpg"
                                     alt="Card image" style="width:100%">
@@ -206,8 +246,8 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 ">
-                        <div class="card img-fluid imagen bg-dark w-75">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card img-fluid imagen bg-dark w-75 border-0">
                             <figure>
                                 <img class="card-img-top rounded-circle" src="../../global/assets/images/chikamaru.jpg"
                                     alt="Card image" style="width:100%">
@@ -225,8 +265,8 @@
             </div>
             <div class="container text-white">
                 <div class="row text-center ms-5">
-                    <div class="col-12 col-sm-6 col-md-3 taco">
-                        <div class="card img-fluid imagen bg-dark w-75">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card img-fluid imagen bg-dark w-75 border-0">
                             <figure>
                                 <img class="card-img-top rounded-circle" src="../../global/assets/images/obito.jpg"
                                     alt="Card image" style="width:100%">
@@ -241,8 +281,8 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 taco">
-                        <div class="card img-fluid imagen bg-dark w-75">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card img-fluid imagen bg-dark w-75 border-0">
                             <figure>
                                 <img class="card-img-top rounded-circle" src="../../global/assets/images/merida.jpg"
                                     alt="Card image" style="width:100%">
@@ -257,7 +297,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-3 taco">
-                        <div class="card img-fluid imagen bg-dark w-75">
+                        <div class="card img-fluid imagen bg-dark w-75 border-0">
                             <figure>
                                 <img class="card-img-top rounded-circle" src="../../global/assets/images/aurora.jpg"
                                     alt="Card image" style="width:100%">
@@ -272,7 +312,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-3 ">
-                        <div class="card img-fluid imagen bg-dark w-75">
+                        <div class="card img-fluid imagen bg-dark w-75 border-0">
                             <figure>
                                 <img class="card-img-top rounded-circle" src="../../global/assets/images/Rapunzel.jpg"
                                     alt="Card image" style="width:100%">
@@ -491,7 +531,7 @@
                             </div>
                             <div class="card-description" id="drop-description">
                                 <div class="card-description-text">
-                                    <h3>Descripción</h3>
+                                    <h3>Resumen</h3>
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, mollitia
                                         consequuntur odio exercitationem impedit quisquam culpa voluptatem veritatis
                                         eos, unde enim amet eveniet nulla provident nihil placeat dolorem libero est.
@@ -587,7 +627,7 @@
         <section id="Contactme" class="py-5 mt-5 bg-dark text-white">
             <div class="container text-center py-5">
                 <h2 class="display-5">
-                    ¡Contáctenos!
+                    ¡Contáctanos!
                 </h2>
                 <div class="row text-start">
                     <div class="col-md-2">
@@ -615,7 +655,7 @@
                     </div>
                 </div>
                 <div class="col-10 mx-auto">
-                    <button id="botfrom" class="btn btn-secondary btn-lg mb-3 rounded-pill" onclick=hola() type="submit" role="button">Enviar</button>
+                    <button id="botfrom" class="btn btn-secondary btn-lg mb-3 rounded-pill" onclick=email() type="submit" role="button">Enviar</button>
                 </div>
 
                 <p class="lh-1 mt-5"><small>
@@ -679,7 +719,39 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-            <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+        
+        <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+
+        <!-- Scripts de facebook -->
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '670842247595830',
+                    xfbml: true,
+                    version: 'v12.0'
+                });
+                FB.AppEvents.logPageView();
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0" nonce="A5p5aDYc"></script>
+        <!-- Scripts de facebook -->
+
+        <!--Smtp JS-->
+        <!-- <script src="https://smtpjs.com/v3/smtp.js">
+        </script> -->
+
         <!-- JS-->
         <script src="../js/aboutUs.js"></script>
 </body>

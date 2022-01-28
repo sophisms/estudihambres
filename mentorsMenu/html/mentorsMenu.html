@@ -28,7 +28,7 @@
         }
     </style>
 
-    <!-- navbar inicio  -->
+    <!-- Header -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Estudiambre</a>
@@ -39,27 +39,66 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../home/html/home.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Quienes somos</a>
+                        <a class="nav-link" href="../../mentorsMenu/html/mentorsMenu.html">Mentores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Maestros</a>
+                        <a class="nav-link" href="../../aboutUs/html/aboutUs.html">Sobre nosotros</a>
                     </li>
-
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Busca tu clase" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    <button class="btn btn-primary ms-lg-4" type="submit">Login</button>
+                    <button class="btn btn-outline-success me-2" type="submit">Buscar</button>
+                    <a href="#login" data-bs-toggle="modal" class="btn btn-dark">Login</a>
                 </form>
 
             </div>
         </div>
     </nav>
-    <!-- navbar fin -->
+
+    <!-- modal de login  -->
+    <div class="modal fade" id="login" aria-labelledby="compraLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <div class="card bg-dark text-white ">
+                        <img src="https://www.questionpro.com/blog/wp-content/uploads/2018/08/Encuestas-estudiantes-768x512.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Inicio de sesion</h3>
+                            <p class="card-text">Bienvenido a la mejor plataforma de aprendizaje. Aqui inicia la
+                                aventura</p>
+                            <div class="fb-login-button text-center align-bottom" data-width="" data-size="large"
+                                data-button-type="continue_with" data-layout="default" data-auto-logout-link="false"
+                                data-use-continue-as="false"></div>
+                            <br><br>
+                            <p>O ingrese con su correo</p>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="nombre@ejemplo.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">password</label>
+                                <input type="password" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="****">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Ingresar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal de login  -->
+
+    <!-- /Header -->
 
     <!-- introduccion -->
     <section class="home" id="home">
