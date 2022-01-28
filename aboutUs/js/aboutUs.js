@@ -37,6 +37,7 @@ const email=()=>{
 	}).then(
 		message => alert("email sent")
 	);
+    }
 /*
 //Requerimos el paquete
 var nodemailer = require("nodemailer");
