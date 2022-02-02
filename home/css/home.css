@@ -1,0 +1,75 @@
+@import url("../../global/css/variables.css");
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--fontNormalSize);
+}
+
+h1 {
+    font-family: var(--font-h1);
+    font-size: var(--fontH1Size);
+    font-weight: var(--font-bold);
+}
+
+h2 {
+    font-family: var(--font-h2);
+    font-size: var(--fontH2Size);
+    font-weight: var(--font-semi-bold);
+    color: var(--colorMainSubtitle);
+}
+
+.space-between-sections {
+    margin-bottom: 10rem; /*160px*/
+}
+
+nav {
+    font-family: var(--font-h2);
+}
+
+a {
+    color: var(--colorNav) !important;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--colorNavHover) !important;
+}
+
+.buttons {
+    color: white !important;
+    background-color: var(--colorMainButton) !important;
+    font-family: var(--font-h2);
+}
+
+h1 span {
+    color: var(--colorNavHover);
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+#banner input {
+    background-color: var(--colorSecondaryBg);
+    border-style: none;
+}
+
+.jumpdown-section {
+    font-family: var(--font-h2);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #4C68CC;
+}
+
+.jumpdown-section i {
+    font-size: 2.8rem;
+}
+
+.highlighted-text {
+    color: var(--colorNavHover) !important;
+    font-weight: var(--font-semi-bold);
+}
+
+#short-aboutUs {
+    background-image: url(../../global/assets/images/bg-circles2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
