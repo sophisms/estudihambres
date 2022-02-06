@@ -76,7 +76,7 @@ h1 span {
     background-size: 100%;
 }
 
-#image-dropdown {
+#dropdown {
     font-family: var(--font-body);
     font-size: small;
 }

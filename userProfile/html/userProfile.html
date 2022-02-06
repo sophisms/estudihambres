@@ -43,7 +43,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="image-dropdown">
+                <div id="dropdown">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -60,10 +60,10 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-light"
                                     aria-labelledby="navbarDarkDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#" style="font-size: small;">Dashboard</a></li>
-                                    <li><a class="dropdown-item" href="#" style="font-size: small;">Edit Profile</a>
+                                    <li><a class="dropdown-item" href="#" style="font-size: small;">Editar perfil</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#" style="font-size: small;">Log Out</a></li>
+                                    <li><a class="dropdown-item" href="#" style="font-size: small;">Cerrar sesión</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -92,7 +92,8 @@
                     <div class="card-body">
                         <!--Buttons-->
                         <div class="d-flex justify-content-end">
-                            <button type="button" class="btn btn-primary btn-sm rounded-pill me-md-2 col-lg-5"> Seguir
+                            <button id="dropdown" type="button"
+                                class="btn btn-primary btn-sm rounded-pill me-md-2 col-lg-5"> Seguir
                             </button>
                             <button type="button" class="btn btn-light btn-sm rounded-pill me-md-2"> <img
                                     id="card-icons" src="/global/assets/images/heart.svg" width="20" height="20"
@@ -107,7 +108,7 @@
                                 <img id="card-icons" src="/global/assets/images/menu.svg" width="20" height="20"
                                     class="rounded-circle">
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <ul id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item" href="#">Reportar</a></li>
                             </ul>
                         </div>
@@ -134,22 +135,15 @@
             <!-- Right-side Header -->
             <div class="col-lg-8 ">
                 <div class="card">
-                    <div class="card-header text-center">
-                        <iframe width="660" height="315" class="rounded"
-                            src="https://www.youtube.com/embed/RtbIWbzoi20?controls=0&amp;start=1"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
                     <div class="card-body" id="drop-description">
-                        <!-- Inicio de accordion -->
+                        <!-- Accordion -->
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseOne" aria-expanded="false"
                                         aria-controls="flush-collapseOne">
-                                        Sobre mi
+                                        Sobre mí
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -193,7 +187,7 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseThree" aria-expanded="false"
                                         aria-controls="flush-collapseThree">
-                                        Datos curiosos
+                                        Logros
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse"
@@ -204,53 +198,73 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- inicia calendario -->
-                        <div id='calendar'></div>
-                        <!-- Fin de accordion -->
-                        <div class="card-footer">
-                            <h2 class="mb-3">Comentarios</h2>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="https://i.pinimg.com/474x/9c/67/67/9c6767ece512c5fb31b72c39f390f259--photos-harry-potter.jpg"
-                                        width="100px" class="rounded-circle" alt="">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        Intereses
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Minima praesentium officiis excepturi quod nostrum similique veniam molestiae
+                                        ducimus eos ab in expedita quis, optio quaerat et, qui ex, necessitatibus iusto.
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                    <h2 class="titulo-comentario">Harry</h2>
-                                    <p class="cometario"><small>Lorem ipsum, dolor sit amet consectetur adipisicing
-                                            elit. Est, nostrum autem voluptates a quia architecto omnis atque quos sunt
-                                            quas vel illo, voluptas hic, molestiae et accusamus culpa fugiat
-                                            aliquid.</small></p>
-                                </div>
-                                <div class="col-3 text-warning">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <hr>
-                            </div>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="https://i.pinimg.com/474x/37/ed/a4/37eda4585af3d8f77a04bade9b1d6401.jpg"
-                                        width="100px" class="rounded-circle" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <h2 class="titulo-comentario">Draco</h2>
-                                    <p class="cometario"><small>Pesimo servicio, tuvo la osadia de hablarme como si
-                                            fuera su igual, es un sangre sucia inmunda.
-                                            Mi padre se enterara de esto!</small></p>
-                                </div>
-                                <div class="col-3 text-warning">
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <hr>
                             </div>
                         </div>
+                        <!-- \Accordion-->
                     </div>
 
+                    <!-- Photo Gallery-->
+
+                    <!-- \Photo Gallery-->
+
+                    <div class="card-footer">
+                        <h2 class="mb-3">Comentarios</h2>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="https://i.pinimg.com/474x/9c/67/67/9c6767ece512c5fb31b72c39f390f259--photos-harry-potter.jpg"
+                                    width="100px" class="rounded-circle" alt="">
+                            </div>
+                            <div class="col-6">
+                                <h2 class="titulo-comentario">Harry</h2>
+                                <p class="cometario"><small>Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit. Est, nostrum autem voluptates a quia architecto omnis atque quos sunt
+                                        quas vel illo, voluptas hic, molestiae et accusamus culpa fugiat
+                                        aliquid.</small></p>
+                            </div>
+                            <div class="col-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="https://i.pinimg.com/474x/37/ed/a4/37eda4585af3d8f77a04bade9b1d6401.jpg"
+                                    width="100px" class="rounded-circle" alt="">
+                            </div>
+                            <div class="col-6">
+                                <h2 class="titulo-comentario">Draco</h2>
+                                <p class="cometario"><small>Pesimo servicio, tuvo la osadia de hablarme como si
+                                        fuera su igual, es un sangre sucia inmunda.
+                                        Mi padre se enterara de esto!</small></p>
+                            </div>
+                            <div class="col-3 text-warning">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
             <!-- Lado derecho Fin -->
         </div>
