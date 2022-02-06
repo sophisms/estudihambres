@@ -76,6 +76,11 @@ h1 span {
     background-size: 100%;
 }
 
+#image-dropdown {
+    font-family: var(--font-body);
+}
+
+
 /* /Navbar */
 
 /* Footer */
@@ -83,6 +88,7 @@ h1 span {
     color: var(--colorNav) !important;
     text-decoration: none;
     font-family: var(--font-h2);
+    font-size: var(--fontSmallSize);
 }
 
 #footer a:hover {
