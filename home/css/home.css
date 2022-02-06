@@ -3,6 +3,7 @@
 body {
     font-family: var(--font-body);
     font-size: var(--fontNormalSize);
+    overflow-x: hidden;
 }
 
 h1 {
@@ -39,6 +40,7 @@ nav a:hover {
     color: white !important;
     background-color: var(--colorMainButton) !important;
     font-family: var(--font-h2);
+    border-style: none !important;
 }
 
 h1 span {
@@ -72,4 +74,124 @@ h1 span {
     background-image: url(../../global/assets/images/bg-circles2.png);
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+#home-filter {
+    background-color: var(--colorSecondarySection);
+    font-family: var(--font-h2);
+}
+
+#home-filter input {
+    border-style: none;
+    background-color: var(--colorThirdSection);
+    font-family: var(--font-body);
+}
+
+.circule {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--colorThirdSection);
+}
+
+#featured-mentors .circule {
+    position: relative;
+    transform: translate(40%, -155px);
+    z-index: -5;
+}
+
+.arrow-icon {
+    color: black !important;
+    font-size: 1.2rem !important;
+    position: relative;
+} 
+
+.fa-angle-left {
+    margin-left: -125px;
+}
+
+.fa-angle-right {
+    margin-right: -125px;
+}
+
+#featured-mentors button {
+    font-size: 1.3rem;
+}
+
+#value-proposal {
+    font-family: var(--font-h2);
+}
+
+#value-proposal .circule {
+    /* display: table-cell;
+    vertical-align: middle !important;
+    text-align: center !important; */
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.875rem;
+    padding: 0 40px;
+    line-height: 37px;
+    color: var(--colorSecondarySubtitle);
+    font-weight: var(--font-bold);
+}
+
+#easy-steps .circule {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 6.25rem;
+    padding: 0 40px;
+    line-height: 37px;
+    color: var(--colorSecondarySubtitle);
+    font-weight: var(--font-bold);
+    position: relative;
+    transform: translate(-50%);
+}
+
+.step-bar {
+    background-color: #D2C4E4;
+    border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+    width: 150%;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-h2);
+    font-size: var(--fontH2Size);
+}
+
+#contact-form h3 {
+    font-family: var(--font-h2);
+}
+
+#contact-form input {
+    border: 0;
+    border-bottom: 0.1em;
+    border-color: #000;
+    outline:none;
+    border-style: solid;
+    width: 25rem;
+    padding: 0 12px;
+}
+
+#contact-form input:focus {
+    border-bottom:2px solid #00D015;
+}
+
+#contact-form textarea {
+    width: 400px;
+    border-radius: 0.625rem;
+    padding: 1.2rem 1.7rem;
+    border-style: none;
+    background-color: #EDE9E9;
+    outline:none;
+}
+
+#contact-form button {
+    font-size: 1.3rem;
 }

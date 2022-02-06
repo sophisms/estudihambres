@@ -131,7 +131,7 @@
     <!-- banner -->
 
     <!-- short about us -->
-    <section id="short-aboutUs" class="container-fluid pt-5 border border-danger" style="padding-bottom: 3rem;">
+    <section id="short-aboutUs" class="container-fluid pt-5" style="padding-bottom: 3rem;">
         <div class="container">
             <div class="row mb-3">
                 <div class="col-8">
@@ -158,110 +158,336 @@
     </section>
     <!-- short about us -->
 
-    <!-- <section class="border border-primary">
-        <nav class="navbar navbar-expand-lg">
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <p class="text-center">materia</p>
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <button class="btn ms-5 me-3 rounded-pill buttons mt-5">buscar mentor</button>
-            </div>
-        </nav>
-    </section> -->
-
     <!-- filter -->
-    <section>
-        <div class="container-fluid text-center pt-4">
+    <section id="home-filter">
+        <div class="container-fluid text-center py-4">
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <label for="subject" class="mb-1">materia</label>
+                        <br>
+                        <input type="text" list="subjects" id="subject" name="subject" class="rounded-pill px-3">
+                        <datalist id="subjects">
+                            <option value="Matemáticas"></option>
+                            <option value="Inglés"></option>
+                            <option value="Programación"></option>
+                            <option value="Ejercicio"></option>
+                            <option value="Dibujo"></option>
+                            <option value="Pintura"></option>
+                        </datalist>
+                    </div>
+                    <div class="col">
+                        <label for="modality" class="mb-1">modalidad</label>
+                        <br>
+                        <input type="text" list="modalities" id="modality" name="modality" class="rounded-pill px-3">
+                        <datalist id="modalities">
+                            <option value="Virtual"></option>
+                            <option value="Presencial"></option>
+                        </datalist>
+                    </div>
+                    <div class="col">
+                        <label for="price" class="mb-1">precio</label>
+                        <br>
+                        <input type="text" list="prices" id="price" name="price" class="rounded-pill px-3">
+                        <datalist id="prices">
+                            <option value="Menos de $100"></option>
+                            <option value="$100 - $200"></option>
+                            <option value="$200 - $300"></option>
+                            <option value="$300 - $400"></option>
+                            <option value="$400 - $500"></option>
+                            <option value="$500 o más"></option>
+                        </datalist>
+                    </div>
+                    <div class="col pt-2">
+                        <button type="submit" class="btn ms-5 me-3 rounded-pill buttons"><i class="fas fa-search"></i>
+                            buscar mentor</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- featured mentors -->
+    <section id="featured-mentors" class="space-between-sections">
+        <div class="container mt-3 pt-5">
             <div class="row">
                 <div class="col">
-                    <label for="city">materia</label>
-                    <br>
-                    <input type="text" list="cities" id="subject" name="city">
-                    <datalist id="subject">
-                        <option value="New York City"></option>
-                        <option value="Tokyo"></option>
-                        <option value="Barcelona"></option>
-                        <option value="Mexico City"></option>
-                        <option value="Melbourne"></option>
-                        <option value="Other"></option>  
-                    </datalist>
+                    <h2 class="text-center" style="z-index: 200;">Nuestros mentores destacados</h2>
+                    <div class="circule"></div>
                 </div>
-                <div class="col">
-                    <label for="city">modalidad</label>
-                    <br>
-                    <input type="text" list="cities" id="city" name="city">
-                    <datalist id="cities">
-                        <option value="New York City"></option>
-                        <option value="Tokyo"></option>
-                        <option value="Barcelona"></option>
-                        <option value="Mexico City"></option>
-                        <option value="Melbourne"></option>
-                        <option value="Other"></option>  
-                    </datalist>
+                <div class="col-9">
+                    <div id="carouselExampleIndicators" class="carousel slide pb-5" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color:black;"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color:black;"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color:black;"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="../../global/assets/images/mentor2.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <i class="fas fa-angle-left arrow-icon"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <i class="fas fa-angle-right arrow-icon"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="col">
-                    <label for="city">precio</label>
-                    <br>
-                    <input type="text" list="cities" id="city" name="city">
-                    <datalist id="cities">
-                        <option value="New York City"></option>
-                        <option value="Tokyo"></option>
-                        <option value="Barcelona"></option>
-                        <option value="Mexico City"></option>
-                        <option value="Melbourne"></option>
-                        <option value="Other"></option>  
-                    </datalist>
-                </div>
-                <div class="col">
-                    <button class="btn ms-5 me-3 rounded-pill buttons">conócenos más</button>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <button class="btn ms-5 me-3 rounded-pill buttons mt-5">Tomar clase gratis</button>
                 </div>
             </div>
         </div>
     </section>
-    <!-- filter -->
+    <!-- featured mentors -->
+
+    <!-- value proposal -->
+    <section id="value-proposal" class="space-between-sections">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">Mentoritos te ofrece</h2>
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                <div class="col">
+                    <div class="circule mx-auto">
+                        <p class="my-auto">primer clase gratis</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="circule mx-auto">
+                        <div>
+                            <i class="fas fa-calendar-check" style="font-size: 4rem;"></i>
+                        </div>
+                        <div class="pt-3">
+                            <p class="my-auto">horarios flexibles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="circule mx-auto">
+                        <p class="my-auto">oportunidad de clases presenciales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- value proposal -->
+
+    <!-- easy steps -->
+    <section id="easy-steps" class="space-between-sections">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 style="text-align: right;">Encuentra tu mentor favorito facilmente</h2>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-1"></div>
+                <div class="col">
+                    <div class="step-bar">
+                        <div class="circule">
+                            <p class="my-auto">1</p>
+                        </div>
+                        <p class="my-auto">Elige un tema a estudiar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-3"></div>
+                <div class="col">
+                    <div class="step-bar">
+                        <div class="circule">
+                            <p class="my-auto">2</p>
+                        </div>
+                        <p class="my-auto">Busca su categoría</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col">
+                    <div class="step-bar">
+                        <div class="circule">
+                            <p class="my-auto">3</p>
+                        </div>
+                        <p class="my-auto">Conoce a nuestros mentores</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- easy steps -->
+
+    <!-- contact form -->
+    <section id="contact-form" class="space-between-sections">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col">
+                    <h2>Contacto</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="mx-auto" style="width: 700px;">
+                        <h3 class="text-center">Agradecemos tu tiempo para comunicarte con Mentoritos. ¿Cómo podemos ayudarte?</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="mx-auto text-center" style="width: 700px;">
+                        <form action="">
+                            <input class="my-4" type="text" placeholder="Nombre" name="name" required>
+                            <br>
+                            <input class="mb-4" type="text" placeholder="Apellido" name="last-name" required>
+                            <br>
+                            <input class="mb-4" type="email" placeholder="Correo" name="e-mail" required>
+                            <br>
+                            <textarea class="my-4" name="messsage" id="" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+                            <br>
+                            <button type="submit" class="btn rounded-pill buttons">enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact form -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
