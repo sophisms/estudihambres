@@ -87,6 +87,11 @@ h1 span {
 
 /* /Navbar */
 
+/* Profile Card */
+.card-body>.buttons:hover {
+    color: var(--colorNavHover) !important;
+}
+
 /* Carousel */
 .carousel-item {
     height: 300px;
