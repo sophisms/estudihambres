@@ -81,8 +81,20 @@ h1 span {
     font-size: small;
 }
 
-
 /* /Navbar */
+
+/* Carousel */
+.carousel-item {
+    height: 300px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
+
+/* /Carousel */
 
 /* Footer */
 #footer a {
