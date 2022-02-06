@@ -1,57 +1,92 @@
-/*============================ TEMPLATE STYLE ===========================*/
-@import url('../../global/css/variables.css');
+@import url("../../global/css/variables.css");
 
-/*--Start of aboutUs-main.css--*/
-#main .carousel-inner img {
-    max-height: 70vh;
-    /*si le pongo más se mueve la imagen con el texto cada que cambia*/
-    object-fit: cover;
-    filter: grayscale(5%);
+/* Navbar */
+body {
+    font-family: var(--font-body);
+    font-size: var(--fontNormalSize);
 }
 
-#main p {
-    font-family: var(--fontH1Size);
-    font-size: var(--font-medium);
-}
-
-#carousel {
-    position: relative;
-}
-
-.valores h5 {
-    font-family: var(--font-title1);
+h1 {
+    font-family: var(--font-h1);
     font-size: var(--fontH1Size);
+    font-weight: var(--font-bold);
 }
 
-.valores p {
-    font-family: var(--font-title1);
-    font-size: var(--fontSmallerSize);
+h2 {
+    font-family: var(--font-h2);
+    font-size: var(--fontH2Size);
+    font-weight: var(--font-semi-bold);
+    color: var(--colorMainSubtitle);
 }
 
-#main .card {
-    box-shadow: 0 0 30px rgba(204, 187, 187, 0.22);
-    overflow: hidden;
-    border-radius: 15px;
-    height: 100px;
-    width: 100%;
+.space-between-sections {
+    margin-bottom: 10rem;
+    /*160px*/
 }
 
-#main .card img {
-    height: 50px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    width: 100%;
-    object-fit: cover;
-
+nav {
+    font-family: var(--font-h2);
 }
 
-#footer a {
-    color: white;
+a {
+    color: var(--colorNav) !important;
     text-decoration: none;
 }
 
-#footer a:hover {
-    color: black;
+nav a:hover {
+    color: var(--colorNavHover) !important;
 }
 
-/*--End of aboutUs-main.css--*/
+.buttons {
+    color: white !important;
+    background-color: var(--colorMainButton) !important;
+    font-family: var(--font-h2);
+}
+
+h1 span {
+    color: var(--colorNavHover);
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+#banner input {
+    background-color: var(--colorSecondaryBg);
+    border-style: none;
+}
+
+.jumpdown-section {
+    font-family: var(--font-h2);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #4C68CC;
+}
+
+.jumpdown-section i {
+    font-size: 2.8rem;
+}
+
+.highlighted-text {
+    color: var(--colorNavHover) !important;
+    font-weight: var(--font-semi-bold);
+}
+
+#short-aboutUs {
+    background-image: url(../../global/assets/images/bg-circles2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* /Navbar */
+
+/* Footer */
+#footer a {
+    color: var(--colorNav) !important;
+    text-decoration: none;
+    font-family: var(--font-h2);
+}
+
+#footer a:hover {
+    color: var(--colorNavHover) !important;
+}
+
+/* /Footer */
