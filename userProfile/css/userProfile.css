@@ -78,6 +78,7 @@ h1 span {
 
 #image-dropdown {
     font-family: var(--font-body);
+    font-size: small;
 }
 
 
@@ -87,8 +88,7 @@ h1 span {
 #footer a {
     color: var(--colorNav) !important;
     text-decoration: none;
-    font-family: var(--font-h2);
-    font-size: var(--fontSmallSize);
+    font-family: var(--font-body);
 }
 
 #footer a:hover {
