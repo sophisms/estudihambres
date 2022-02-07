@@ -96,6 +96,14 @@ h1 span {
 /* /Navbar */
 
 /* Profile Card */
+.profile-card {
+    border-radius: 30px !important;
+}
+
+.card-header.bg-white {
+    --bs-bg-opacity: 0 !important;
+}
+
 .profile-icons:hover {
     color: var(--colorNavHover) !important;
 }
@@ -113,6 +121,7 @@ h1 span {
 .follow-button:hover {
     background-color: var(--colorNavHover) !important;
 }
+
 
 /* Carousel */
 .carousel-item {
