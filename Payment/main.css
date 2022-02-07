@@ -16,9 +16,9 @@ h4 {
     color: var(--colorMainSubtitle);
 }
 
-.offcanvas h4{
+/* .offcanvas h4{
     text-justify: ;
-}
+} */
 
 .offcanvas{
     height: 600px;

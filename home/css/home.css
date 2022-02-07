@@ -59,9 +59,10 @@ h1 span {
     text-transform: uppercase;
 }
 
-#banner input {
+.form-input {
     background-color: var(--colorSecondaryBg);
     border-style: none;
+    font-family: var(--font-body);
 }
 
 .jumpdown-section {
