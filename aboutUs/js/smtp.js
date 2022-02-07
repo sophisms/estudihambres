@@ -12,11 +12,11 @@ function email() {
 function sedMail(
        body,
        subject="This is the subject",
-       to="hef6666@gmail.com",
+       to="mentoritosno.1@gmail.com",
        
-       usname="hef6666@gmail.com",
-       pass="avsmkjkfyhnsjpea",
-       from="hef6666@gmail.com") {
+       usname="mentoritosno.1@gmail.com",
+       pass="qhczwtjoyqbhxtdo",
+       from="mentoritosno.1@gmail.com") {
      Email.send({
          Host : "smtp.gmail.com",
          Username : usname,
