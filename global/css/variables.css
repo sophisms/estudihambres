@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;600&display=swap');
 
+
 :root {
     /*============================  COLORS ===========================*/
     --colorNav: #7A7A7A;
@@ -39,6 +40,7 @@
     --font-bold: 700;
 
     /* Font size for large devices */
+
     --fontBigSize: 1.5rem; /*name´s mentor, us*/
     --fontH1Size: 3.75rem; /*titles - 60px*/
     --fontH2Size: 2.5rem; /*subtitles - 40px*/
@@ -46,6 +48,7 @@
     --fontNormalSize: 1rem; /*normal text*/
     --fontSmallSize: 0.625rem; /*footer*/
     --fontSmallerSize: 0.5rem; /*...*/
+
 
     /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
@@ -61,7 +64,8 @@
     /*===================  Margin, Padding and Border  ===============*/
     --borderRadius: 1.875rem;
     --marginMain-7-5: 7.5rem;
-    --paddingMain: 0.625rem; /*to consider*/
+    --paddingMain: 0.625rem;
+    /*to consider*/
 
     /*========== z index ==========*/
     --z-tooltip: 10;
