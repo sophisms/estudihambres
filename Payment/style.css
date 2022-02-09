@@ -1,8 +1,7 @@
 /*============================ TEMPLATE STYLE ===========================*/
 /*@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat+Alternates:wght@600&family=Montserrat:wght@400;600&display=swap');
 
 :root {
     /*============================  COLORS ===========================*/
@@ -13,13 +12,13 @@
     --colorSecondaryBg: #ECE4F8;
     --colorMainBg: #e8e8e8;
     --colorMainSection: #7a7a7a;
-    --colorSecondarySection: #D0D6F9;
-    --colorThirdSection: #E9DCFB;
-    --colorFooter: #504460;
+    --colorSecondarySection: #958e8e;
+    --colorThirdSection: #e8e8e8;
+    --colorFooter: #7a7a7a;
     --colorMainTitle: #e8e8e8;
     --colorSecondaryTitle: #7a7a7a;
     --colorMainSubtitle: #4C68CC;
-    --colorSecondarySubtitle: #533C73;
+    --colorSecondarySubtitle: #7a7a7a;
     --colorMainText: #0000;
     --colorSecondaryText: #ffff;
     --colorMainIcons: #0000; /*starts*/
@@ -40,7 +39,6 @@
     --font-bold: 700;
 
     /* Font size for large devices */
-
     --fontBigSize: 1.5rem; /*name´s mentor, us*/
     --fontH1Size: 3.75rem; /*titles - 60px*/
     --fontH2Size: 2.5rem; /*subtitles - 40px*/
@@ -48,7 +46,6 @@
     --fontNormalSize: 1rem; /*normal text*/
     --fontSmallSize: 0.625rem; /*footer*/
     --fontSmallerSize: 0.5rem; /*...*/
-
 
     /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
@@ -62,10 +59,9 @@
     --mb-3: 3rem;
 
     /*===================  Margin, Padding and Border  ===============*/
-    --borderRadius: 1.875rem;
+    --borderRadius: 30rem;
     --marginMain-7-5: 7.5rem;
-    --paddingMain: 0.625rem;
-    /*to consider*/
+    --paddingMain: 0.625rem; /*to consider*/
 
     /*========== z index ==========*/
     --z-tooltip: 10;

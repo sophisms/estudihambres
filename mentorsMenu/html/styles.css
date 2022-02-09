@@ -1,52 +1,104 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+@import url("../../global/css/variables.css");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
 }
 
-body{
-
-width: 100%;
-height: 100vh;
-align-items: center;
-/*display: flex;*/
-/*justify-content: center;*/
-
+body {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  /*display: flex;*/
+  /*justify-content: center;*/
 }
 
-
-
-.card{
-width: 100%;
-margin: 20px;
-background: #fff;
-overflow: hidden;
-box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-cursor: default;
-transition: all 500ms ease;
+.space-between-sections {
+  margin-bottom: 10rem; /*160px*/
 }
 
+#navbar {
+  position: sticky !important;
+  top: 0;
+  background-color: white;
+  z-index: 100000;
+}
 
-.card :hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translate(-3%);
+nav {
+  font-family: var(--font-h2);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: var(--colorNav) !important;
+}
+
+nav a:hover {
+  color: var(--colorNavHover) !important;
+}
+
+.form-input {
+  background-color: var(--colorSecondaryBg) !important;
+  border-style: none !important;
+  font-family: var(--font-body) !important;
+}
+
+.card {
+  width: 100%;
+  margin: 20px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 500ms ease;
+}
+
+.card :hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translate(-3%);
 }
 
 .card img {
-
-width: 300px;
-height: 300px;
-
+  width: 300px;
+  height: 300px;
 }
-   
 
+.buttons {
+  color: white !important;
+  background-color: var(--colorMainButton) !important;
+  font-family: var(--font-h2);
+  border-style: none !important;
+}
+
+footer {
+  height: 15rem;
+  background-color: var(--colorFooter);
+}
+
+footer a {
+  text-decoration: none;
+  color: #ede9e9;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: var(--colorMainButton);
+}
+
+footer i {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
