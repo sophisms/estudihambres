@@ -59,9 +59,10 @@ h1 span {
     text-transform: uppercase;
 }
 
-#banner input {
+.form-input {
     background-color: var(--colorSecondaryBg);
     border-style: none;
+    font-family: var(--font-body);
 }
 
 .jumpdown-section {
@@ -220,6 +221,8 @@ h3 {
 
 .subcategory {
     /* width: 12rem; */
+    /* object-fit: scale-down; */
+    background-size: cover;
     height: 14.8125rem;
     border-style: none;
     border-radius: var(--borderRadius);
@@ -248,6 +251,8 @@ h3 {
 
 .category {
     /* width: 22.5rem; */
+    /* object-fit: scale-down; */
+    background-size: cover;
     height: 14.8125rem;
     border-style: none;
     border-radius: var(--borderRadius);
