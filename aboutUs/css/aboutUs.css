@@ -1,6 +1,10 @@
 /*============================ TEMPLATE STYLE ===========================*/
 @import url("../../global/css/variables.css");
 
+body{
+  overflow-x: hidden;
+}
+
 .space-between-sections {
   margin-bottom: 10rem; /*160px*/
 }
@@ -54,7 +58,7 @@ h3 {
 p {
   font-family: var(--font-body);
   font-size: var(--font-medium);
-  color: var(--colorNav);
+  color: black;
 }
 
 #main .carousel-inner img {
@@ -97,6 +101,12 @@ p {
 /*--End of aboutUs-main.css--*/
 
 /*--Start of aboutUs-team.css--*/
+.espacio {
+  background: #D0E4F5 url("https://p4.wallpaperbetter.com/wallpaper/955/69/70/minimalism-space-stars-wallpaper-preview.jpg") no-repeat local 0 0;
+  background-size: cover;
+}
+  
+
 .bg-primary {
    background-color: (--AboutUs)  !important;
 }
@@ -136,6 +146,10 @@ p {
 .imagen figure .desaparece h4 {
   /* aqui se aleja el texxto */
   margin-bottom: 160px;
+}
+
+#cards-info-space p, #video-aboutUs p {
+  color: white !important;
 }
 
 /*--End of aboutUs-team.css--*/
@@ -222,6 +236,10 @@ iframe {
 
 /*--Start of aboutUs-timeLine.css--*/
 /*esto es la linea central */
+#timeline-aboutUs h3 {
+  color: var(--colorH2);
+}
+
 .timeline {
   position: relative;
 }
@@ -317,6 +335,7 @@ iframe {
     left: 50%;
     margin-top: 0px;
     margin-left: -15px;
+}
 
 .buttons {
   color: white !important;
@@ -324,6 +343,7 @@ iframe {
   font-family: var(--font-h2);
   border-style: none !important;
 }
+
 #contact-form input {
   border: 0;
   border-bottom: 0.1em;
