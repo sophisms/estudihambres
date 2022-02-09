@@ -2,91 +2,80 @@
 
 /* Navbar */
 body {
-    font-family: var(--font-body);
-    font-size: var(--fontNormalSize);
-    overflow-x: hidden;
+  font-family: var(--font-body);
+  font-size: var(--fontNormalSize);
+  overflow-x: hidden;
 }
 
 h1 {
-    font-family: var(--font-h1);
-    font-size: var(--fontH1Size);
-    font-weight: var(--font-bold);
+  font-family: var(--font-h1);
+  font-size: var(--fontH1Size);
+  font-weight: var(--font-bold);
 }
 
 h2 {
-    font-family: var(--font-h2);
-    font-size: var(--fontH2Size);
-    font-weight: var(--font-semi-bold);
-    color: var(--colorMainSubtitle);
+  font-family: var(--font-h2);
+  font-size: var(--fontH2Size);
+  font-weight: var(--font-semi-bold);
+  color: var(--colorMainSubtitle);
 }
 
 h5 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--fontNormalSize);
-    font-weight: var(--font-semi-bold);
-    color: var(--colorMainSubtitle);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--fontNormalSize);
+  font-weight: var(--font-semi-bold);
+  color: var(--colorMainSubtitle);
 }
 
 .space-between-sections {
-    margin-bottom: 10rem;
-    /*160px*/
+  margin-bottom: 10rem; /*160px*/
+}
+
+#navbar {
+  position: sticky !important;
+  top: 0;
+  background-color: white;
+  z-index: 100000;
 }
 
 nav {
-    font-family: var(--font-h2);
+  font-family: var(--font-h2);
 }
 
 a {
-    color: var(--colorNav) !important;
-    text-decoration: none;
+  text-decoration: none;
+}
+
+nav a {
+  color: var(--colorNav) !important;
 }
 
 nav a:hover {
-    color: var(--colorNavHover) !important;
+  color: var(--colorNavHover) !important;
 }
 
 .buttons {
-    color: white !important;
-    background-color: var(--colorMainButton) !important;
-    font-family: var(--font-h2);
+  color: white !important;
+  background-color: var(--colorMainButton) !important;
+  font-family: var(--font-h2);
+  border-style: none !important;
 }
 
 h1 span {
-    color: var(--colorNavHover);
-    font-size: 5rem;
-    text-transform: uppercase;
+  color: var(--colorNavHover);
+  font-size: 5rem;
+  text-transform: uppercase;
 }
 
-#banner input {
-    background-color: var(--colorSecondaryBg);
-    border-style: none;
-}
-
-.jumpdown-section {
-    font-family: var(--font-h2);
-    text-transform: uppercase;
-    font-size: 1.25rem;
-    color: #4C68CC;
-}
-
-.jumpdown-section i {
-    font-size: 2.8rem;
-}
-
-.highlighted-text {
-    color: var(--colorNavHover) !important;
-    font-weight: var(--font-semi-bold);
-}
-
-#short-aboutUs {
-    background-image: url(../../global/assets/images/bg-circles2.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+.form-input {
+  background-color: var(--colorSecondaryBg) !important;
+  border-style: none !important;
+  font-family: var(--font-body) !important;
 }
 
 #dropdown {
-    font-family: var(--font-body);
-    font-size: small;
+  font-family: var(--font-body);
+  font-size: small;
 }
 
 /*.dropdown-menu {
@@ -97,59 +86,74 @@ h1 span {
 
 /* Profile Card */
 .profile-card {
-    border-radius: 30px !important;
+  border-radius: 30px !important;
 }
 
 .card-header.bg-white {
-    --bs-bg-opacity: 0 !important;
+  --bs-bg-opacity: 0 !important;
 }
 
 .profile-icons:hover {
-    color: var(--colorNavHover) !important;
+  color: var(--colorNavHover) !important;
 }
 
 .icons-size {
-    font-size: var(--fontNormalSize);
+  font-size: var(--fontNormalSize);
 }
 
 .follow-button {
-    color: white !important;
-    background-color: var(--colorMainButton) !important;
-    font-family: var(--font-h2);
+  color: white !important;
+  background-color: var(--colorMainButton) !important;
+  font-family: var(--font-h2);
 }
 
 .follow-button:hover {
-    background-color: var(--colorNavHover) !important;
+  background-color: var(--colorNavHover) !important;
 }
-
 
 /* Carousel */
 .carousel-item {
-    height: 300px;
+  height: 300px;
 }
 
 .card-img-top {
-    width: 100%;
-    height: 30vw;
-    object-fit: cover;
+  width: 100%;
+  height: 30vw;
+  object-fit: cover;
 }
 
 /* /Carousel */
 
 /* Statistics */
 .stat-size {
-    font-size: var(--fontH3Size);
+  font-size: var(--fontH3Size);
+}
+
+/* Space between sections*/
+.space-between-sections {
+  margin-bottom: 10rem; /*160px*/
 }
 
 /* Footer */
-#footer a {
-    color: var(--colorNav) !important;
-    text-decoration: none;
-    font-family: var(--font-body);
+
+footer {
+  height: 15rem;
+  background-color: var(--colorFooter);
 }
 
-#footer a:hover {
-    color: var(--colorNavHover) !important;
+footer a {
+  text-decoration: none;
+  color: #ede9e9;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: var(--colorMainButton);
+}
+
+footer i {
+  font-size: 2rem;
+  margin-left: 0.5rem;
 }
 
 /* /Footer */
