@@ -22,6 +22,7 @@ h2 {
     color: var(--colorMainSubtitle);
 }
 
+
 .space-between-sections {
     margin-bottom: 10rem; /*160px*/
 }
@@ -53,6 +54,7 @@ a {
 nav a {
     color: var(--colorNav) !important;
 }
+
 
 nav a:hover {
     color: var(--colorNavHover) !important;
