@@ -57,9 +57,13 @@
 /*--End of aboutUs-main.css--*/
 
 /*--Start of aboutUs-team.css--*/
+.bg-primary {
+   background-color: (--AboutUs)  !important;
+}
+
 .desaparece {
     /* Aqui se le añade un color de fondo y se desaparece el texto */
-    background-color: rgba(122, 122, 122, 0.9);
+    background-color: #4C68CC;
     visibility: hidden !important;
 }
 
@@ -108,7 +112,7 @@
 .card-video {
     position: relative;
     overflow: hidden;
-    background: #afafaf;
+    background: #533C73;
     padding: 15px 10px;
     border-radius: 30px;
 }
@@ -125,11 +129,11 @@
     display: block;
     cursor: pointer;
     font-size: 40px;
-    color: black;
+    color:  #4C68CC;
 }
 
 .drop i:hover {
-    color: var(--colorMainHover);
+    color: var(--colorMainSubtitle);
 }
 
 .drop-rotate {
@@ -150,9 +154,9 @@
     font-family: var(--font-title);
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
-    color: var(--colorSecondarySubtitles);
+    color: var(--colorSecondaryText);
     padding: 25px 10px 8px 10px;
-    border-bottom: 1px solid rgb(48, 47, 47);
+    border-bottom: 1px solid rgb(255, 255, 255);
 
 }
 
@@ -196,6 +200,7 @@ iframe {
     width: 100%;
     margin-bottom: 50px;
     margin-top: 3rem;
+    color: white;
     /*separcacion entre tarejetas*/
 }
 
@@ -217,7 +222,7 @@ iframe {
     width: 45%;
     padding: 10px 30px;
     border-radius: 30px;
-    background: #afafaf;
+    background: #533C73;
     /*fondo de los contenedores*/
 }
 
@@ -239,7 +244,7 @@ iframe {
 /*este es el estylo de la fecha*/
 
 .date {
-    background: #000000;
+    background: #4C68CC;
     display: inline-block;
     color: #FFFFFF;
     padding: 10px;
@@ -251,7 +256,7 @@ iframe {
 
 .timeline-item:nth-child(even) .date {
     width: fit-content;
-    background: #000000;
+    background: #4C68CC;
     display: inline-block;
     color: #FFFFFF;
     padding: 10px;
@@ -264,7 +269,7 @@ iframe {
 .point-line {
     width: 30px;
     height: 30px;
-    background: #afafaf;
+    background: #4C68CC;
     border-radius: 30%;
     position: absolute;
     left: 50%;
