@@ -92,12 +92,25 @@ h1 span {
 /* /Navbar */
 
 /* Profile Card */
+.main-profile-card {
+    border-color: #4C68CC !important;
+}
+
 .profile-card {
     border-radius: 30px !important;
 }
 
+.card-header {
+    border-bottom-color: #4C68CC !important;
+}
+
 .card-header.bg-white {
     --bs-bg-opacity: 0 !important;
+}
+
+.card-body {
+    font-family: var(--font-body) !important;
+    font-size: var(--fontNormalSize) !important;
 }
 
 .profile-icons:hover {
@@ -111,7 +124,7 @@ h1 span {
 .follow-button {
     color: white !important;
     background-color: var(--colorMainButton) !important;
-    font-family: var(--font-h2);
+    font-family: var(--font-body) !important;
     border-style: none !important;
 }
 
@@ -141,9 +154,44 @@ h1 span {
 /* /Carousel */
 
 /* Statistics */
+.stat-header {
+    color: #533C73;
+}
+
+.stat-bg {
+    background-color: #E9DCFB !important;
+    border-radius: 30px !important;
+    border-style: none !important;
+}
+
+.style-border {
+    border-style: none !important;
+}
+
 .stat-size {
     font-size: var(--fontH3Size);
 }
+
+/* Opinions */
+.opinions-profile {
+    width: 20% !important;
+}
+
+.opinions-review {
+    width: 55% !important;
+}
+
+.titulo-comentario {
+    color: black !important;
+}
+
+.cometario {
+    font-family: var(--font-body) !important;
+    font-size: var(--fontNormalSize) !important;
+    color: black !important;
+}
+
+/* \Opinions */
 
 /* Footer */
 #footer a {
