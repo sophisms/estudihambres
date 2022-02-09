@@ -22,24 +22,30 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Navbar -->
-    <div class="mb-5 mt-3 container-fluid">
+    <div id="navbar" class="mb-5 mt-3 container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../../home/html/home.html">
                     <img src="../../global/assets/images/meteorite2.jpg" alt="" width="50"
                         class="d-inline-block align-text-middle">
                     Mentoritos
                 </a>
+                <div class="ms-4">
+                    <form class="d-flex">
+                        <input class="form-control me-2 form-input rounded-pill" type="search" placeholder="Encontrar un mentor" aria-label="Search">
+                        <button class="btn btn-outline-success rounded-pill" type="submit">Buscar</button>
+                    </form>
+                </div>
                 <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">mentores</a>
+                            <a class="nav-link" href="../../mentorsMenu/html/mentorsMenu.html">mentores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">sobre nosotros</a>
+                            <a class="nav-link" href="../../aboutUs/html/aboutUs.html">sobre nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">mi perfil</a>
+                            <a class="nav-link" href="../../userProfile/html/userProfile.html">mi perfil</a>
                         </li>
                     </ul>
                 </div>
@@ -435,35 +441,37 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer id="footer" class="pb-4 pt-4 bg-dark border-top border-white mt-auto">
+    <!-- footer -->
+    <footer>
         <div class="container">
-            <div class="row text-center">
-                <div class="col-12 col-lg">
-                    <a href="#">Preguntas frecuentes</a>
+            <div class="row">
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5">Enseña con nosotros</a><br>
+                    <a href="" class="mb-0">FAQ</a><br>
+                    <a href="">Reportar malas prácticas</a>
                 </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Contáctanos</a>
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5">Enseña con nosotros</a><br>
+                    <a href="" class="mb-0">FAQ</a><br>
+                    <a href="">Reportar malas prácticas</a>
                 </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Prensa</a>
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5">Aviso de provacidad</a><br>
+                    <a href="" class="mb-0">Términos y condiciones</a><br>
                 </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Conferencias</a>
-                </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Términos y condiciones</a>
-                </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Privacidad</a>
-                </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Estudiantes</a>
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5"><i class="fab fa-facebook-square"></i></a>
+                    <a href="" class="mb-0"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- /Footer -->
+    <!-- footer -->
 
     <!-- Login Modal -->
     <div class="modal fade" id="login" aria-labelledby="compraLabel" tabindex="-1">
