@@ -22,24 +22,30 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Navbar -->
-    <div class="mb-5 mt-3 container-fluid">
+    <div id="navbar" class="mb-5 mt-3 container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../../home/html/home.html">
                     <img src="../../global/assets/images/meteorite2.jpg" alt="" width="50"
                         class="d-inline-block align-text-middle">
                     Mentoritos
                 </a>
+                <div class="ms-4">
+                    <form class="d-flex">
+                        <input class="form-control me-2 form-input rounded-pill" type="search" placeholder="Encontrar un mentor" aria-label="Search">
+                        <button class="btn btn-outline-success rounded-pill" type="submit">Buscar</button>
+                    </form>
+                </div>
                 <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">mentores</a>
+                            <a class="nav-link" href="../../mentorsMenu/html/mentorsMenu.html">mentores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">sobre nosotros</a>
+                            <a class="nav-link" href="../../aboutUs/html/aboutUs.html">sobre nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">mi perfil</a>
+                            <a class="nav-link" href="../../userProfile/html/userProfile.html">mi perfil</a>
                         </li>
                     </ul>
                 </div>
@@ -80,7 +86,7 @@
         <div class="row">
             <!-- userProfile Card-->
             <div class="col-lg-4 ">
-                <div class="card text-center sticky-md-top profile-card bg-white">
+                <div class="card text-center sticky-md-top profile-card bg-white main-profile-card text-black">
                     <div class="card-header bg-white">
                         <h2 class="py-2">Sofía Aguilar</h2>
                     </div>
@@ -111,15 +117,15 @@
                         </div>
                         <!--Personal Info-->
                         <div class="d-flex justify-content-start mt-4">
-                            <i class="fas fa-map-marked-alt icons-size me-md-2"></i>
+                            <i class="fas fa-map-marked-alt icons-size me-md-3"></i>
                             <p class="text-start">Guadalajara, Jalisco</p>
                         </div>
                         <div class="d-flex justify-content-start">
-                            <i class="far fa-envelope icons-size me-md-2"></i>
+                            <i class="far fa-envelope icons-size me-md-3"></i>
                             <p class="text-start">sa.aguilarvaldez@gmail.com</p>
                         </div>
 
-                        <p class="text-black-50" style="text-align: justify;"> ¡Hola! Me llamo Sofía y estoy buscando un
+                        <p class="text-black" style="text-align: justify;"> ¡Hola! Me llamo Sofía y estoy buscando un
                             mentor para aprender matemáticas.</p>
                     </div>
                 </div>
@@ -132,7 +138,7 @@
                 <div class="card profile-card">
                     <div class="card-body" id="drop-description">
                         <!-- Accordion -->
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush text-black" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -215,7 +221,7 @@
                 </div>
 
                 <!-- Photo Gallery-->
-                <div id="carouselExampleControls" class="carousel slide mt-3" data-bs-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide mt-3 style-border" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <!-- Each carousel-item has 4 cards w/zoomed in images -->
                         <div class="carousel-item active">
@@ -323,10 +329,10 @@
                 <!-- \Photo Gallery-->
 
                 <!-- Statistics -->
-                <div class="card mt-3 profile-card">
-                    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+                <div class="card mt-3 profile-card style-border">
+                    <div class="header stat-bg pb-8 pt-5 pt-md-8">
                         <div class="container-fluid pb-5">
-                            <h2 class="mb-5">Estadísticas</h2>
+                            <h2 class="mb-5 stat-header">Estadísticas</h2>
                             <div class="header-body">
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6">
@@ -334,16 +340,17 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <h5 class="card-title text-uppercase text-muted mb-0">Clases
+                                                        <h5 class="card-title text-uppercase text-black mb-0">
+                                                            Clases
                                                         </h5>
-                                                        <span class="h2 font-weight-bold mb-0">350,897</span>
+                                                        <span class="h2 font-weight-bold mb-0 text-black">350,897</span>
                                                     </div>
                                                     <div class="col-auto">
                                                         <div class="stat-size text-success"><i class="fas fa-book"></i>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p class="mt-3 mb-0 text-muted text-sm">
+                                                <p class="mt-3 mb-0 text-black text-sm">
                                                     <span class="text-success mr-2"><i class="fa fa-arrow-up"></i>
                                                         3.48%</span>
                                                     <span class="text-nowrap">Ene - Feb</span>
@@ -356,9 +363,9 @@
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <h5 class="card-title text-uppercase text-muted mb-0">Asistencia
+                                                        <h5 class="card-title text-uppercase text-black mb-0">Asistencia
                                                         </h5>
-                                                        <span class="h2 font-weight-bold mb-0">2,356</span>
+                                                        <span class="h2 font-weight-bold mb-0 text-black">2,356</span>
                                                     </div>
                                                     <div class="col-auto">
                                                         <div class="stat-size text-danger">
@@ -366,7 +373,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p class="mt-3 mb-0 text-muted text-sm">
+                                                <p class="mt-3 mb-0 text-black text-sm">
                                                     <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i>
                                                         3.48%</span>
                                                     <span class="text-nowrap">Ene - Feb</span>
@@ -384,43 +391,51 @@
 
                 <!-- Opinions-->
                 <div class="card mt-3 mb-3 profile-card">
-                    <div class="card-body">
-                        <h2 class="mb-3">Opiniones</h2>
-                        <div class="row">
-                            <div class="col-3">
-                                <img src="/global/assets/images/chikamaru.jpg" width="100px" class="rounded-circle"
-                                    alt="">
-                            </div>
-                            <div class="col-6">
-                                <h2 class="titulo-comentario">Mentor #1</h2>
-                                <p class="cometario"><small>Lorem ipsum, dolor sit amet consectetur adipisicing
-                                        elit. Est, nostrum autem voluptates a quia architecto omnis atque quos sunt
-                                        quas vel illo, voluptas hic, molestiae et accusamus culpa fugiat
-                                        aliquid.</small></p>
-                            </div>
-                            <div class="col-3 text-warning">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="row">
-                            <div class="col-3">
-                                <img src="/global/assets/images/chikamaru.jpg" width="100px" class="rounded-circle"
-                                    alt="">
-                            </div>
-                            <div class="col-6">
-                                <h2 class="titulo-comentario">Mentor #2</h2>
-                                <p class="cometario"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                                        placeat quasi magni numquam, voluptatum inventore at dolores voluptas nostrum,
-                                        magnam nihil eveniet. Dolorem illo, nobis voluptate cupiditate quasi rerum
-                                        repudiandae.</small></p>
-                            </div>
-                            <div class="col-3 text-warning">
-                                <i class="fas fa-star"></i>
+                    <div class="header pb-8 pt-5 pt-md-8">
+                        <div class="container-fluid pb-5">
+                            <div class="card-body">
+                                <h2 class="mb-5 stat-header">Opiniones</h2>
+                                <div class="row">
+                                    <div class="col-3 opinions-profile">
+                                        <img src="/global/assets/images/chikamaru.jpg" width="100px"
+                                            class="rounded-circle" alt="">
+                                    </div>
+                                    <div class="col-6 opinions-review">
+                                        <h3 class="titulo-comentario">Mentor #1</h3>
+                                        <p class="cometario"><small>Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                elit. Est, nostrum autem voluptates a quia architecto omnis atque quos
+                                                sunt
+                                                quas vel illo, voluptas hic, molestiae et accusamus culpa fugiat
+                                                aliquid.</small></p>
+                                    </div>
+                                    <div class="col-3 text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3 opinions-profile">
+                                        <img src="/global/assets/images/chikamaru.jpg" width="100px"
+                                            class="rounded-circle" alt="">
+                                    </div>
+                                    <div class="col-6 opinions-review">
+                                        <h3 class="titulo-comentario">Mentor #2</h3>
+                                        <p class="cometario"><small>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. In
+                                                placeat quasi magni numquam, voluptatum inventore at dolores voluptas
+                                                nostrum,
+                                                magnam nihil eveniet. Dolorem illo, nobis voluptate cupiditate quasi
+                                                rerum
+                                                repudiandae.</small></p>
+                                    </div>
+                                    <div class="col-3 text-warning">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -435,35 +450,37 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer id="footer" class="pb-4 pt-4 bg-dark border-top border-white mt-auto">
+    <!-- footer -->
+    <footer>
         <div class="container">
-            <div class="row text-center">
-                <div class="col-12 col-lg">
-                    <a href="#">Preguntas frecuentes</a>
+            <div class="row">
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5">Enseña con nosotros</a><br>
+                    <a href="" class="mb-0">FAQ</a><br>
+                    <a href="">Reportar malas prácticas</a>
                 </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Contáctanos</a>
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5">Enseña con nosotros</a><br>
+                    <a href="" class="mb-0">FAQ</a><br>
+                    <a href="">Reportar malas prácticas</a>
                 </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Prensa</a>
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5">Aviso de provacidad</a><br>
+                    <a href="" class="mb-0">Términos y condiciones</a><br>
                 </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Conferencias</a>
-                </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Términos y condiciones</a>
-                </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Privacidad</a>
-                </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Estudiantes</a>
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5"><i class="fab fa-facebook-square"></i></a>
+                    <a href="" class="mb-0"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- /Footer -->
+    <!-- footer -->
 
     <!-- Login Modal -->
     <div class="modal fade" id="login" aria-labelledby="compraLabel" tabindex="-1">

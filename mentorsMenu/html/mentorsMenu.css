@@ -6,6 +6,8 @@ body {
     overflow-x: hidden;
 }
 
+
+
 h1 {
     font-family: var(--font-h1);
     font-size: var(--fontH1Size);
@@ -59,17 +61,16 @@ h1 span {
     text-transform: uppercase;
 }
 
-.form-input {
+#banner input {
     background-color: var(--colorSecondaryBg);
     border-style: none;
-    font-family: var(--font-body);
 }
 
 .jumpdown-section {
     font-family: var(--font-h2);
     text-transform: uppercase;
     font-size: 1.25rem;
-    color: #4c68cc;
+    color: #4C68CC;
     margin-top: 22rem;
 }
 
@@ -123,136 +124,10 @@ h1 span {
     z-index: -5;
 }
 
-.arrow-icon {
-    color: black !important;
-    font-size: 1.2rem !important;
-    position: relative;
-}
 
-.fa-angle-left {
-    margin-left: -125px;
-}
-
-.fa-angle-right {
-    margin-right: -125px;
-}
-
-#featured-mentors button {
-    font-size: 1.3rem;
-}
-
-#value-proposal {
-    font-family: var(--font-h2);
-}
-
-#value-proposal .circule {
-    /* display: table-cell;
-        vertical-align: middle !important;
-        text-align: center !important; */
-    width: 250px;
-    height: 250px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.875rem;
-    padding: 0 40px;
-    line-height: 37px;
-    color: var(--colorSecondarySubtitle);
-    font-weight: var(--font-bold);
-}
-
-#easy-steps .circule {
-    width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 6.25rem;
-    padding: 0 40px;
-    line-height: 37px;
-    color: var(--colorSecondarySubtitle);
-    font-weight: var(--font-bold);
-    position: relative;
-    transform: translate(-50%);
-}
-
-.step-bar {
-    background-color: #d2c4e4;
-    border-radius: var(--borderRadius) 0 0 var(--borderRadius);
-    width: 150%;
-    display: flex;
-    align-items: center;
-    font-family: var(--font-h2);
-    font-size: var(--fontH2Size);
-}
-
-h3 {
-    font-family: var(--font-h2);
-}
-
-#contact-form input {
-    border: 0;
-    border-bottom: 0.1em;
-    border-color: #000;
-    outline: none;
-    border-style: solid;
-    width: 25rem;
-    padding: 0 12px;
-}
-
-#contact-form input:focus {
-    border-bottom: 2px solid #00d015;
-}
-
-#contact-form textarea {
-    width: 400px;
-    border-radius: 0.625rem;
-    padding: 1.2rem 1.7rem;
-    border-style: none;
-    background-color: #ede9e9;
-    outline: none;
-}
-
-#contact-form button {
-    font-size: 1.3rem;
-}
-
-.subcategory {
-  /* width: 12rem; */
-  /* object-fit: scale-down; */
-    background-size: cover;
-    height: 14.8125rem;
-    border-style: none;
-    border-radius: var(--borderRadius);
-    color: var(--colorSecondaryText);
-    font-weight: var(--font-semi-bold);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 1.25rem;
-    font-family: var(--font-h2);
-    z-index: 1;
-    padding: 2rem;
-}
-
-.subcategory::after {
-    content: "";
-    border-radius: var(--borderRadius);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: -1;
-}
 
 .category {
-  /* width: 22.5rem; */
-  /* object-fit: scale-down; */
-    background-size: cover;
+    /* width: 22.5rem; */
     height: 14.8125rem;
     border-style: none;
     border-radius: var(--borderRadius);
@@ -268,15 +143,15 @@ h3 {
 }
 
 .category::after {
-    content: "";
+    content:"";
     border-radius: var(--borderRadius);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: -1;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:-1;
 }
 
 footer {
@@ -286,7 +161,7 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #ede9e9;
+    color: #EDE9E9;
 }
 
 footer a:hover {
@@ -308,4 +183,4 @@ footer i {
     width: 100%;
     height: 30vw;
     object-fit: cover;
-} */
+} */ 
