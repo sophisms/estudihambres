@@ -21,24 +21,30 @@
 <body>
    
 
-   <!-- Navbar -->
-   <div id="navbar" class="mb-5 pt-3 container-fluid">
+    <!-- Navbar -->
+    <div id="navbar" class="mb-5 pt-3 container-fluid">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../../home/html/home.html">
                 <img src="../../global/assets/images/meteorite2.jpg" alt="" width="50" class="d-inline-block align-text-middle">
                 Mentoritos
             </a>
-            <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+            <div class="ms-4">
+                <form class="d-flex">
+                    <input class="form-control me-2 form-input rounded-pill" type="search" placeholder="Encontrar un mentor" aria-label="Search">
+                    <button class="btn btn-outline-success rounded-pill" type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="collapse navbar-collapse me-1" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/mentorsMenu/html/mentorsMenu.html">mentores</a>
+                        <a class="nav-link" href="../../mentorsMenu/html/mentorsMenu.html">mentores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">sobre nosotros</a>
+                        <a class="nav-link" href="../../aboutUs/html/aboutUs.html">sobre nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">mi perfil</a>
+                        <a class="nav-link" href="../../userProfile/html/userProfile.html">mi perfil</a>
                     </li>
                 </ul>
             </div>
@@ -48,7 +54,7 @@
                         <button class="btn ms-5 me-3 rounded-pill buttons">crea una cuenta</button>
                     </li>
                     <li class="nav-item">
-                        <a href="#login" data-bs-toggle="modal" class="nav-link" href="#">inicia sesión</a>
+                        <a href="#login" data-bs-toggle="modal" class="nav-link">inicia sesión</a>
                     </li>
                 </ul>
             </div>
@@ -57,44 +63,44 @@
 </div>
 <!-- Navbar -->
 
-    <!-- modal de login  -->
-    <div class="modal fade" id="login" aria-labelledby="compraLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content bg-dark">
-                <div class="modal-header">
-                    <div class="card bg-dark text-white ">
-                        <img src="https://www.questionpro.com/blog/wp-content/uploads/2018/08/Encuestas-estudiantes-768x512.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">Inicio de sesion</h3>
-                            <p class="card-text">Bienvenido a la mejor plataforma de aprendizaje. Aqui inicia la
-                                aventura</p>
-                            <div class="fb-login-button text-center align-bottom" data-width="" data-size="large"
-                                data-button-type="continue_with" data-layout="default" data-auto-logout-link="false"
-                                data-use-continue-as="false"></div>
-                            <br><br>
-                            <p>O ingrese con su correo</p>
+<!-- modal de login  -->
+<div class="modal fade" id="login" aria-labelledby="compraLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <div class="card bg-dark text-white ">
+                    <img src="https://www.questionpro.com/blog/wp-content/uploads/2018/08/Encuestas-estudiantes-768x512.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Inicio de sesion</h3>
+                        <p class="card-text">Bienvenido a la mejor plataforma de aprendizaje. Aqui inicia la
+                            aventura</p>
+                        <div class="fb-login-button text-center align-bottom" data-width="" data-size="large"
+                            data-button-type="continue_with" data-layout="default" data-auto-logout-link="false"
+                            data-use-continue-as="false"></div>
+                        <br><br>
+                        <p>O ingrese con su correo</p>
 
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="nombre@ejemplo.com">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">password</label>
-                                <input type="password" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="****">
-                            </div>
-                            <div class="col-auto">
-                                <button type="submit" class="btn btn-primary mb-3">Ingresar</button>
-                            </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">password</label>
+                            <input type="password" class="form-control" id="exampleFormControlInput2"
+                                placeholder="****">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-3">Ingresar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- modal de login  -->
+</div>
+<!-- modal de login  -->
 
     <!--inicio de modal de mentors-cards -->
     <div class="modal fade" id="mentorsCards" aria-labelledby="compraLabel" tabindex="-1">
@@ -122,12 +128,9 @@
     <!-- introduccion carrusel de mentores  -->
     <div class="container" id="home">
 
-        <div class="text-center" style="color: black">
-            <br><br><br><br><br>
-            <h2>menu de mentores</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ea magnam? Maxime repellat corrupti eveniet
-                quam velit quasi quae ab voluptas corporis unde ad, eaque voluptatibus optio
-                eiciendis aspernatur fugiat?</p>
+        <div class="text-center mt-3" style="color: black">
+            <h2>Elige a tu <strong style="color: var(--colorSecondarySubtitle);">mentorito</strong> favorito</h2>
+            <p>Aquí podrás encontrar una amplia variedad de mentores listos para acompañarte en tu proceso de aprendizaje.</p>
 
             
         </div>
