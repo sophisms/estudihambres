@@ -61,6 +61,12 @@ h1 span {
     text-transform: uppercase;
 }
 
+.form-input {
+    background-color: var(--colorSecondaryBg) !important;
+    border-style: none !important;
+    font-family: var(--font-body) !important;
+}
+
 #banner input {
     background-color: var(--colorSecondaryBg);
     border-style: none;

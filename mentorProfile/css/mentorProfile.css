@@ -22,19 +22,9 @@ h2 {
     color: var(--colorMainSubtitle);
 }
 
-
 .space-between-sections {
     margin-bottom: 10rem; /*160px*/
 }
-
-/*Navbar styles*/
-#navbar {
-    position: sticky !important;
-    top: 0;
-    background-color: white;
-    z-index: 100000;
-}
-
 
 #navbar {
     position: sticky !important;
@@ -55,9 +45,13 @@ nav a {
     color: var(--colorNav) !important;
 }
 
-
 nav a:hover {
     color: var(--colorNavHover) !important;
+}
+
+#dropdown {
+    font-family: var(--font-body);
+    font-size: small;
 }
 
 .buttons {
@@ -65,6 +59,12 @@ nav a:hover {
     background-color: var(--colorMainButton) !important;
     font-family: var(--font-h2);
     border-style: none !important;
+}
+
+.form-input {
+    background-color: var(--colorSecondaryBg);
+    border-style: none;
+    font-family: var(--font-body);
 }
 
 
@@ -140,4 +140,24 @@ nav a:hover {
 .progress i{
     font-size: var(--fontH3Size);
     transform: rotate(220deg);
+}
+
+footer {
+    height: 15rem;
+    background-color: var(--colorFooter);
+}
+
+footer a {
+    text-decoration: none;
+    color: #ede9e9;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--colorMainButton);
+}
+
+footer i {
+    font-size: 2rem;
+    margin-left: 0.5rem;
 }

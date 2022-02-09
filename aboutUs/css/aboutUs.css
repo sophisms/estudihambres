@@ -1,6 +1,10 @@
 /*============================ TEMPLATE STYLE ===========================*/
 @import url("../../global/css/variables.css");
 
+body{
+  overflow-x: hidden;
+}
+
 .space-between-sections {
   margin-bottom: 10rem; /*160px*/
 }
@@ -54,7 +58,7 @@ h3 {
 p {
   font-family: var(--font-body);
   font-size: var(--font-medium);
-  color: var(--colorNav);
+  color: black;
 }
 
 #main .carousel-inner img {
@@ -97,10 +101,20 @@ p {
 /*--End of aboutUs-main.css--*/
 
 /*--Start of aboutUs-team.css--*/
+.espacio {
+  background: #D0E4F5 url("https://p4.wallpaperbetter.com/wallpaper/955/69/70/minimalism-space-stars-wallpaper-preview.jpg") no-repeat local 0 0;
+  background-size: cover;
+}
+  
+
+.bg-primary {
+   background-color: (--AboutUs)  !important;
+}
+
 .desaparece {
-  /* Aqui se le añade un color de fondo y se desaparece el texto */
-  background-color: rgba(122, 122, 122, 0.9);
-  visibility: hidden !important;
+    /* Aqui se le añade un color de fondo y se desaparece el texto */
+    background-color: #4C68CC;
+    visibility: hidden !important;
 }
 
 .imagen:hover {
@@ -134,6 +148,10 @@ p {
   margin-bottom: 160px;
 }
 
+#cards-info-space p, #video-aboutUs p {
+  color: white !important;
+}
+
 /*--End of aboutUs-team.css--*/
 
 /*--Start of aboutUs-video.css--*/
@@ -146,11 +164,11 @@ p {
 }
 
 .card-video {
-  position: relative;
-  overflow: hidden;
-  background: #afafaf;
-  padding: 15px 10px;
-  border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #533C73;
+    padding: 15px 10px;
+    border-radius: 30px;
 }
 
 .drop {
@@ -162,14 +180,14 @@ p {
 }
 
 .drop i {
-  display: block;
-  cursor: pointer;
-  font-size: 40px;
-  color: black;
+    display: block;
+    cursor: pointer;
+    font-size: 40px;
+    color:  #4C68CC;
 }
 
 .drop i:hover {
-  color: var(--colorMainHover);
+    color: var(--colorMainSubtitle);
 }
 
 .drop-rotate {
@@ -191,13 +209,13 @@ p {
 }
 
 .card-description-text h3 {
-  font-size: var(--fontH3Size);
-  font-family: var(--font-title);
-  font-weight: var(--font-semi-bold);
-  text-transform: uppercase;
-  color: var(--colorSecondarySubtitles);
-  padding: 25px 10px 8px 10px;
-  border-bottom: 1px solid rgb(48, 47, 47);
+    font-size: var(--fontH3Size);
+    font-family: var(--font-title);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    color: var(--colorSecondaryText);
+    padding: 25px 10px 8px 10px;
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .card-description-text p {
@@ -218,6 +236,10 @@ iframe {
 
 /*--Start of aboutUs-timeLine.css--*/
 /*esto es la linea central */
+#timeline-aboutUs h3 {
+  color: var(--colorH2);
+}
+
 .timeline {
   position: relative;
 }
@@ -236,10 +258,11 @@ iframe {
 /*esto son los contenedores */
 
 .timeline-item {
-  width: 100%;
-  margin-bottom: 50px;
-  margin-top: 3rem;
-  /*separcacion entre tarejetas*/
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 3rem;
+    color: white;
+    /*separcacion entre tarejetas*/
 }
 
 .timeline-item::after {
@@ -256,12 +279,12 @@ iframe {
 }
 
 .timeline-content {
-  position: relative;
-  width: 45%;
-  padding: 10px 30px;
-  border-radius: 30px;
-  background: #afafaf;
-  /*fondo de los contenedores*/
+    position: relative;
+    width: 45%;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: #533C73;
+    /*fondo de los contenedores*/
 }
 
 .timeline-item:nth-child(even) .timeline-content::after {
@@ -281,44 +304,46 @@ iframe {
 /*este es el estylo de la fecha*/
 
 .date {
-  background: #000000;
-  display: inline-block;
-  color: #ffffff;
-  padding: 10px;
-  border-radius: 30px;
-  position: absolute;
-  top: 0;
-  right: 0;
+    background: #4C68CC;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .timeline-item:nth-child(even) .date {
-  width: fit-content;
-  background: #000000;
-  display: inline-block;
-  color: #ffffff;
-  padding: 10px;
-  border-radius: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
+    width: fit-content;
+    background: #4C68CC;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .point-line {
-  width: 30px;
-  height: 30px;
-  background: #afafaf;
-  border-radius: 30%;
-  position: absolute;
-  left: 50%;
-  margin-top: 0px;
-  margin-left: -15px;
+    width: 30px;
+    height: 30px;
+    background: #4C68CC;
+    border-radius: 30%;
+    position: absolute;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -15px;
 }
+
 .buttons {
   color: white !important;
   background-color: var(--colorMainButton) !important;
   font-family: var(--font-h2);
   border-style: none !important;
 }
+
 #contact-form input {
   border: 0;
   border-bottom: 0.1em;
