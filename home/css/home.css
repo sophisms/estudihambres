@@ -59,14 +59,10 @@ h1 span {
   text-transform: uppercase;
 }
 
-#banner input {
-  background-color: var(--colorSecondaryBg);
-  border-style: none;
-}
 .form-input {
-  background-color: var(--colorSecondaryBg);
-  border-style: none;
-  font-family: var(--font-body);
+    background-color: var(--colorSecondaryBg);
+    border-style: none;
+    font-family: var(--font-body);
 }
 
 .jumpdown-section {
@@ -224,19 +220,21 @@ h3 {
 }
 
 .subcategory {
-  /* width: 12rem; */
-  height: 14.8125rem;
-  border-style: none;
-  border-radius: var(--borderRadius);
-  color: var(--colorSecondaryText);
-  font-weight: var(--font-semi-bold);
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 1.25rem;
-  font-family: var(--font-h2);
-  z-index: 1;
-  padding: 2rem;
+    /* width: 12rem; */
+    /* object-fit: scale-down; */
+    background-size: cover;
+    height: 14.8125rem;
+    border-style: none;
+    border-radius: var(--borderRadius);
+    color: var(--colorSecondaryText);
+    font-weight: var(--font-semi-bold);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.25rem;
+    font-family: var(--font-h2);
+    z-index: 1;
+    padding: 2rem;
 }
 
 .subcategory::after {
@@ -252,19 +250,21 @@ h3 {
 }
 
 .category {
-  /* width: 22.5rem; */
-  height: 14.8125rem;
-  border-style: none;
-  border-radius: var(--borderRadius);
-  color: var(--colorSecondaryText);
-  font-weight: var(--font-semi-bold);
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 2.5rem;
-  font-family: var(--font-body);
-  z-index: 1;
-  padding: 2rem;
+    /* width: 22.5rem; */
+    /* object-fit: scale-down; */
+    background-size: cover;
+    height: 14.8125rem;
+    border-style: none;
+    border-radius: var(--borderRadius);
+    color: var(--colorSecondaryText);
+    font-weight: var(--font-semi-bold);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2.5rem;
+    font-family: var(--font-body);
+    z-index: 1;
+    padding: 2rem;
 }
 
 .category::after {
