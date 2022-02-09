@@ -4,8 +4,9 @@ let mentor={
             name:"luis"
             ,img:"https://images.pexels.com/photos/953703/pexels-photo-953703.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
             ,star:5
-            ,class:"matematicas"
+            ,class:"musica"
             ,modality:"en linea"
+            ,description: "lorem lorem"
             ,price:15
             
         },
@@ -13,7 +14,7 @@ let mentor={
             name:"juan"
             ,img:"https://images.pexels.com/photos/4307849/pexels-photo-4307849.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:5
-            ,class:"matematicas"
+            ,class:"Pintura"
             ,modality:"en linea"
             ,price:20
             
@@ -22,7 +23,7 @@ let mentor={
             name:"mon"
             ,img:"https://images.pexels.com/photos/5795034/pexels-photo-5795034.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:4
-            ,class:"matematicas"
+            ,class:"danza contemporanea"
             ,modality:"en linea"
             ,price:35
             
@@ -31,7 +32,7 @@ let mentor={
             name:"karen"
             ,img:"https://images.pexels.com/photos/6094038/pexels-photo-6094038.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:5
-            ,class:"matematicas"
+            ,class:"ingles"
             ,modality:"en linea"
             ,price:35
             
@@ -40,7 +41,7 @@ let mentor={
             name:"brenda"
             ,img:"https://images.pexels.com/photos/7307380/pexels-photo-7307380.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:2
-            ,class:"matematicas"
+            ,class:"programaciòn"
             ,modality:"en linea"
             ,price:25
             
@@ -49,7 +50,7 @@ let mentor={
             name:"pablo"
             ,img:"https://images.pexels.com/photos/2033287/pexels-photo-2033287.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:3
-            ,class:"matematicas"
+            ,class:"fisica"
             ,modality:"en linea"
             ,price:30
             
@@ -58,7 +59,7 @@ let mentor={
             name:"pedro"
             ,img:"https://images.pexels.com/photos/5131401/pexels-photo-5131401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:4
-            ,class:"matematicas"
+            ,class:"algebra"
             ,modality:"en linea"
             ,price:35
             
@@ -67,7 +68,7 @@ let mentor={
             name:"mario"
             ,img:"https://images.pexels.com/photos/4607198/pexels-photo-4607198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:2
-            ,class:"matematicas"
+            ,class:"mecanica"
             ,modality:"en linea"
             ,price:5
             
@@ -76,7 +77,7 @@ let mentor={
             name:"luis"
             ,img:"https://images.pexels.com/photos/10887630/pexels-photo-10887630.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:1
-            ,class:"matematicas"
+            ,class:"Historia"
             ,modality:"en linea"
             ,price:15
             
@@ -85,7 +86,7 @@ let mentor={
             name:"mayrelin"
             ,img:"https://images.pexels.com/photos/5794945/pexels-photo-5794945.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:5
-            ,class:"matematicas"
+            ,class:"electronica"
             ,modality:"en linea"
             ,price:30
         }
@@ -110,45 +111,48 @@ function inputMentor(item,element,number=item.length) {
               </div>`;
             }
         }
-        conten+=`
+        conten += `
         <div name="item" class=" m-3 position-relative" style="width: 18rem;">
-        <img src="${item[index].img}" class="  card-img-top" alt="..." style="border-radius: 30px;">
-        <div class="card-body position-absolute bottom-0  bg-danger bg-opacity-50 text-white col-12" style="width: 16.5rem; border-bottom-left-radius:30px; border-bottom-right-radius:30px;">
+        <a href="#mentorsCards" data-bs-toggle="modal" onclick=ConstructorModal(${index}) href="#">
+     <img src="${item[index].img}" class="  card-img-top"  data-bs-toggle="mentorsCards"  alt="..." style="border-radius: 30px;">
+    <div class="card-body position-absolute bottom-0  bg-dark bg-opacity-50 text-white col-12" style="width: 16.5rem; border-bottom-left-radius:30px; border-bottom-right-radius:30px;">
           <h5 class="card-title">${item[index].name}</h5>
-          <div class="row justify-content-between">
+        <div class="row justify-content-between">
             <div class="col-4">
-              mate
+            ${item[index].class}
             </div>
-            <div class="col-7 text-end">
+        <div class="col-7 text-end">
               ${item[index].price} dollar/hour
-            </div>
-          </div>
-            <div class="row g-0 justify-content-around">
+    </div>
+</div>
+            <div class="row g-0 justify-content-around"> <!--contenedor estrellas-->
                 ${star}
             </div>
         </div>
+        </a>
       </div>
-        `
+        `;
         star=""
     }
     document.getElementById(`${element}`).innerHTML=`
-   <div class=""col-12>
-   <button type="button" class="btn btn-primary col-1" onclick=element()>borrar</button>
-   <button type="button" class="btn btn-primary col-1" onclick=addItem()>agregar</button>
+   <div class="col-12 row g-0 justify-content-around" >
+   <div class="col-6">
+   <button type="button" class="btn btn-primary col-2" onclick=element()>borrar</button>
+   <button type="button" class="btn btn-primary col-2" onclick=addItem()>agregar</button>
+   </div>
    </div>
    `+conten
 }
 
 inputMentor(mentor.items,"Cards-Mentores")
 
-let ne={
-    name:"juan"
-    ,img:"https://images.pexels.com/photos/4307849/pexels-photo-4307849.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    ,star:3
+let ne= {
+    name:"mayrelin"
+    ,img:"https://images.pexels.com/photos/5794945/pexels-photo-5794945.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    ,star:5
     ,class:"matematicas"
     ,modality:"en linea"
-    ,price:20
-    
+    ,price:30
 }
 
 function addItem(array=mentor.items,newItem=ne) {
@@ -178,3 +182,20 @@ function element() {
     })
    
 }
+
+function ConstructorModal( id, array = mentor.items ){
+  let image = document.getElementById("imageProfile")
+  let contentMentor = document.getElementById("contentProfile")
+  image.src =`${array[id].img}`
+  contentMentor.innerHTML = `<h3>${array[id].name}</h3>
+  <h4>clase impartida: ${array[id].class}</h4>
+  <h4>modalidad: ${array[id].modality}</h4>
+  <p>tarifas accesibles a tan solo: ${array[id].price} dolares /hora</p>
+  <button class="btn  me-3 rounded-pill btn-primary">solicitar clase</button> 
+  `
+  
+
+}
+
+
+
