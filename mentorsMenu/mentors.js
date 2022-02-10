@@ -1,17 +1,17 @@
 let mentor={
     items:[
         {
-            name:"luis"
+            name:"Luis"
             ,img:"https://images.pexels.com/photos/953703/pexels-photo-953703.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
             ,star:5
-            ,class:"musica"
+            ,class:"Música"
             ,modality:"en linea"
             ,description: "lorem lorem"
             ,price:15
             
         },
         {
-            name:"juan"
+            name:"Juan"
             ,img:"https://images.pexels.com/photos/4307849/pexels-photo-4307849.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:5
             ,class:"Pintura"
@@ -20,61 +20,61 @@ let mentor={
             
         },
         {
-            name:"mon"
+            name:"Mon"
             ,img:"https://images.pexels.com/photos/5795034/pexels-photo-5795034.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:4
-            ,class:"danza contemporanea"
+            ,class:"Danza Contemporanea"
             ,modality:"en linea"
             ,price:35
             
         },
         {
-            name:"karen"
+            name:"Karen"
             ,img:"https://images.pexels.com/photos/6094038/pexels-photo-6094038.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:5
-            ,class:"ingles"
+            ,class:"Inglés"
             ,modality:"en linea"
             ,price:35
             
         },
         {
-            name:"brenda"
+            name:"Brenda"
             ,img:"https://images.pexels.com/photos/7307380/pexels-photo-7307380.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:2
-            ,class:"programaciòn"
+            ,class:"Programación"
             ,modality:"en linea"
             ,price:25
             
         },
         {
-            name:"pablo"
+            name:"Pablo"
             ,img:"https://images.pexels.com/photos/2033287/pexels-photo-2033287.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:3
-            ,class:"fisica"
+            ,class:"Física"
             ,modality:"en linea"
             ,price:30
             
         },
         {
-            name:"pedro"
+            name:"Pedro"
             ,img:"https://images.pexels.com/photos/5131401/pexels-photo-5131401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:4
-            ,class:"algebra"
+            ,class:"Álgebra"
             ,modality:"en linea"
             ,price:35
             
         },
         {
-            name:"mario"
+            name:"Mario"
             ,img:"https://images.pexels.com/photos/4607198/pexels-photo-4607198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:2
-            ,class:"mecanica"
+            ,class:"Mecánica"
             ,modality:"en linea"
             ,price:5
             
         },
         {
-            name:"luis"
+            name:"Luis"
             ,img:"https://images.pexels.com/photos/10887630/pexels-photo-10887630.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:1
             ,class:"Historia"
@@ -83,10 +83,10 @@ let mentor={
             
         },
         {
-            name:"mayrelin"
+            name:"Mayrelin"
             ,img:"https://images.pexels.com/photos/5794945/pexels-photo-5794945.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ,star:5
-            ,class:"electronica"
+            ,class:"Electrónica"
             ,modality:"en linea"
             ,price:30
         }
@@ -188,9 +188,9 @@ function ConstructorModal( id, array = mentor.items ){
   let contentMentor = document.getElementById("contentProfile")
   image.src =`${array[id].img}`
   contentMentor.innerHTML = `<h3>${array[id].name}</h3>
-  <h4>clase impartida: ${array[id].class}</h4>
-  <h4>modalidad: ${array[id].modality}</h4>
-  <p>tarifas accesibles a tan solo: ${array[id].price} dolares /hora</p>
+  <h4>Clase impartida: ${array[id].class}</h4>
+  <h4>Modalidad: ${array[id].modality}</h4>
+  <p>Tarifas accesibles a tan solo: ${array[id].price} dolares /hora</p>
   <button class="btn  me-3 rounded-pill btn-primary">solicitar clase</button> 
   `
   
