@@ -39,7 +39,11 @@ h5 {
 }
 
 nav {
-  font-family: var(--font-h2);
+  font-family: var(--font-h2) !important; 
+}
+
+.taquo{
+  background-color: black !important;
 }
 
 a {

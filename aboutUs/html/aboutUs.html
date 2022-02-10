@@ -26,44 +26,44 @@
 
 <body>
     <!-- Navbar -->
-    <div id="navbar" class="mb-5 pt-3 container-fluid">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../../home/html/home.html">
-                    <img src="../../global/assets/images/meteorite2.jpg" alt="" width="50" class="d-inline-block align-text-middle">
-                    Mentoritos
-                </a>
-                <div class="ms-4">
-                    <form class="d-flex">
-                        <input class="form-control me-2 form-input rounded-pill" type="search" placeholder="Encontrar un mentor" aria-label="Search">
-                        <button class="btn btn-outline-success rounded-pill" type="submit">Buscar</button>
-                    </form>
-                </div>
-                <div class="collapse navbar-collapse me-1" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../mentorsMenu/html/mentorsMenu.html">mentores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../aboutUs/html/aboutUs.html">sobre nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../mentorProfile/html/mentorProfile.html">mi perfil</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <button class="btn ms-5 me-3 rounded-pill buttons">crea una cuenta</button>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#login" data-bs-toggle="modal" class="nav-link" href="#">inicia sesión</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html"><img src="../../global/assets/images/meteorite2.jpg" alt=""
+                    width="50" class="d-inline-block align-text-middle">
+                Mentoritos</a>
+            <div class="ms-lg-4">
+                <form class="d-flex">
+                    <input class="form-control me-lg-2 form-input rounded-pill" type="search"
+                        placeholder="Encontrar un mentor" aria-label="Search">
+                    <button class="btn btn-outline-success rounded-pill" type="submit">Buscar</button>
+                </form>
             </div>
-        </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-end justify-content-sm-start"
+                id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../mentorsMenu/html/mentorsMenu.html">mentores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../aboutUs/html/aboutUs.html">sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../mentorProfile/html/mentorProfile.html">mi perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn ms-lg-4 me-lg-3 rounded-pill buttons">crea una cuenta</button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#login" data-bs-toggle="modal" class="nav-link">inicia sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     </div>
     <!-- Navbar -->
     <!-- Header -->
@@ -111,8 +111,9 @@
 
     <!-- Start of Carousel-->
     <main id="main">
-        <div class="container mb-5 pb-3"> 
-            <h2 class="text-center">Somos <strong> el vínculo </strong> entre mentores y estudiantes para facilitar el intercambio de conocimientos.</h2>
+        <div class="container mb-5 pb-3">
+            <h2 class="text-center">Somos <strong> el vínculo </strong> entre mentores y estudiantes para facilitar el
+                intercambio de conocimientos.</h2>
         </div>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -163,38 +164,42 @@
                     </p>
                 </div>
                 <div class="col"></div>
-            </div>     
+            </div>
         </div>
         <div class="container">
             <h2 class="py-5">Nuestros <strong>valores</strong></h2>
             <div class="row row-cols-1 row-cols-md-3 ">
-            <div class="col">
-                <div class="card h-100 color-border-card">
-                    <img class="card-img-top" src="../../global/assets/images/about-us/community.svg" alt="sans" />
-                    <div class="card-body">
-                        <h3 class="card-title">Comunidad</h3>
-                        <p class="card-text">Ayudamos a formar relaciones que fomenten y te acompañen en tu aprendizaje.</p>
+                <div class="col">
+                    <div class="card h-100 color-border-card">
+                        <img class="card-img-top" src="../../global/assets/images/about-us/community.svg" alt="sans" />
+                        <div class="card-body">
+                            <h3 class="card-title">Comunidad</h3>
+                            <p class="card-text">Ayudamos a formar relaciones que fomenten y te acompañen en tu
+                                aprendizaje.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 color-border-card">
-                    <img class="card-img-top" src="../../global/assets/images/about-us/inclusion.svg" alt="sans" />
-                    <div class="card-body">
-                        <h3 class="card-title">Inclusión</h3>
-                        <p class="card-text">Creemos que todos somos iguales y tenemos la misma oportunidad de enseñar y aprender.</p>  
+                <div class="col">
+                    <div class="card h-100 color-border-card">
+                        <img class="card-img-top" src="../../global/assets/images/about-us/inclusion.svg" alt="sans" />
+                        <div class="card-body">
+                            <h3 class="card-title">Inclusión</h3>
+                            <p class="card-text">Creemos que todos somos iguales y tenemos la misma oportunidad de
+                                enseñar y aprender.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 color-border-card">
-                    <img class="card-img-top my-4" src="../../global/assets/images/about-us/security.svg" alt="security" />
-                    <div class="card-body mt-4">
-                        <h3 class="card-title">Seguridad</h3>
-                        <p class="card-text">Nos importa que tus datos personales  y las transacciones que realices sean seguras mediante la encriptación de datos.</p>
+                <div class="col">
+                    <div class="card h-100 color-border-card">
+                        <img class="card-img-top my-4" src="../../global/assets/images/about-us/security.svg"
+                            alt="security" />
+                        <div class="card-body mt-4">
+                            <h3 class="card-title">Seguridad</h3>
+                            <p class="card-text">Nos importa que tus datos personales y las transacciones que realices
+                                sean seguras mediante la encriptación de datos.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
@@ -235,8 +240,9 @@
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="card img-fluid imagen espacio w-75 border-0">
                         <figure>
-                            <img class="card-img-top rounded-circle" src="../../global/assets/images/Lilia Rabago Marte.png"
-                                alt="Card image" style="width:100%">
+                            <img class="card-img-top rounded-circle"
+                                src="../../global/assets/images/Lilia Rabago Marte.png" alt="Card image"
+                                style="width:100%">
                             <div class="card-img-overlay desaparece">
                                 <h4 class="card-title">Lilia Rabago</h4>
                                 <p class="card-text">Java Fullstack Developer</p>
@@ -272,7 +278,7 @@
                             <div class="card-img-overlay desaparece">
                                 <h4 class="card-title">Jorge Mercado</h4>
                                 <p class="card-text">Java Fullstack Developer</p>
-    
+
                                 <a href="#JorgeMercado" data-bs-toggle="modal" class="btn btn-dark">Ver más</a>
                             </div>
                         </figure>
@@ -313,7 +319,7 @@
                                 src="../../global/assets/images/Sofía Acosta Neptuno.png" alt="Card image"
                                 style="width:100%">
                             <div class="card-img-overlay desaparece">
-                                <h4 class="card-title">Sofia Acosta</h4>
+                                <h4 class="card-title">Sofia Aguilar</h4>
                                 <p class="card-text">Java Fullstack Developer</p>
                                 <a href="#SofiaAcosta" data-bs-toggle="modal" class="btn btn-dark">Ver más</a>
                             </div>
@@ -324,7 +330,7 @@
         </div>
     </section>
     <!-- Fin de Cards de informacion personal -->
-    
+
     <!-- Inicio de Modal's -->
     <section>
         <div class="modal fade" id="JonathanJimenez" aria-labelledby="compraLabel" tabindex="-1">
@@ -333,18 +339,21 @@
                     <div class="modal-header">
                         <div class="row ">
                             <div class=" col-7">
-                                <img src="../../global/assets/images/Jonathan Jimenez _ Jupiter.png" class="w-100" alt="">
+                                <img src="../../global/assets/images/Jonathan Jimenez _ Jupiter.png" class="w-100"
+                                    alt="">
                             </div>
                             <div class="col-5 my-auto">
                                 <h2 class="h3">Jonathan Jimenez</h2>
                                 <p><small>
-                                        Hola! soy Jonathan. Soy originario de la cuna de la torta de tamal y las quesadillas
+                                        Hola! soy Jonathan. Soy originario de la cuna de la torta de tamal y las
+                                        quesadillas
                                         que no necesariamente tienen queso.
                                         <br><br>
-                                        Actualmente me dedico a ser el gran Tlatoani, protector de la plataforma Mentoritos.
+                                        Actualmente me dedico a ser el gran Tlatoani, protector de la plataforma
+                                        Mentoritos.
                                         <br><br>
                                         Mi pecado capital es: que amo jugar magic, lol y mobile legends,
-    
+
                                     </small></p>
                             </div>
                         </div>
@@ -352,7 +361,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="JorgeMercado" aria-labelledby="compraLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content bg-opacity-50">
@@ -366,10 +375,12 @@
                                 <p><small>Hola! Soy Jorge Mercado, antes de que preguntes, si.. soy Libra. Curioso por
                                         naturaleza y apasionado por aprender cosas nuevas.
                                         <br><br>
-                                        Actualmente me gusta estudiar programación y disfrutar de las cosas más simples de
+                                        Actualmente me gusta estudiar programación y disfrutar de las cosas más simples
+                                        de
                                         la vida.
                                         <br><br>
-                                        26 años y contando, originario de la tierra del tejuino, mi lema es “ La vida es un
+                                        26 años y contando, originario de la tierra del tejuino, mi lema es “ La vida es
+                                        un
                                         don.. Saber vivir es un arte”. </small></p>
                             </div>
                         </div>
@@ -377,7 +388,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="DanielCalamateo" aria-labelledby="compraLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content bg-opacity-50">
@@ -391,7 +402,8 @@
                                 <p><small>La mitad del mundo ya me conoce, la otra mitad me quiere conocer.
                                         Mi nombre es Daniel Calamateo.
                                         <br><br>
-                                        Odio muchas cosas y no me agrada alguna cosa en particular. No tengo un sueño porque
+                                        Odio muchas cosas y no me agrada alguna cosa en particular. No tengo un sueño
+                                        porque
                                         lo convertiré en realidad.
                                         <br><br>
                                         Voy a restaurar mi clan y matar una cierta persona. </small></p>
@@ -401,7 +413,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="LiliaRabago" aria-labelledby="compraLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content bg-opacity-50">
@@ -412,11 +424,13 @@
                             </div>
                             <div class="col-5 my-auto">
                                 <h2 class="h3">Lilia Rabago</h2>
-                                <p><small>Hola! Soy Lily, tengo 27 años. Me encanta el orden y creo que en mi otra vida fuí
+                                <p><small>Hola! Soy Lily, tengo 27 años. Me encanta el orden y creo que en mi otra vida
+                                        fuí
                                         una agenda.
                                         <br><br>
                                         Soy una persona creativa y apasionada. Eso lo transmito en todo lo que hago.
-                                        Mis pasatiempos son: tocar la guitarra y salir a pasear en bicicleta para calmar mi
+                                        Mis pasatiempos son: tocar la guitarra y salir a pasear en bicicleta para calmar
+                                        mi
                                         mente.
                                         <br><br>
                                         Antes de convertirme en ninja no era nadie, pero nunca me rendí.
@@ -430,23 +444,26 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="CarolinaCarrillo" aria-labelledby="compraLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content bg-opacity-50">
                     <div class="modal-header">
                         <div class="row ">
                             <div class=" col-7">
-                                <img src="../../global/assets/images/Carolina Carrillo_Tierra..png" class="w-100" alt="">
+                                <img src="../../global/assets/images/Carolina Carrillo_Tierra..png" class="w-100"
+                                    alt="">
                             </div>
                             <div class="col-5 my-auto">
                                 <h2 class="h3">Carolina Carrillo</h2>
-                                <p><small>Holaaa Soy Caro, tengo 26 años. Me encanta comer y hablar de comida. Soy Acuario o
+                                <p><small>Holaaa Soy Caro, tengo 26 años. Me encanta comer y hablar de comida. Soy
+                                        Acuario o
                                         Capricornio según me convenga lo que diga el horóscopo.
                                         <br><br>
-                                        Me gusta hacer yoga porque relaja mi alma, mis pensamientos.Siempre trato de tomar
+                                        Me gusta hacer yoga porque relaja mi alma, mis pensamientos.Siempre trato de
+                                        tomar
                                         todo lo bueno de cada situación y usarlo para mejorar.
-    
+
                                         <br><br>
                                         El lema de mi vida es: “El no ya lo tienes, hazlo posible!” </small></p>
                             </div>
@@ -455,7 +472,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="ReginaRoji" aria-labelledby="compraLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content bg-opacity-50">
@@ -466,16 +483,20 @@
                             </div>
                             <div class="col-5 my-auto">
                                 <h2 class="h3">Regina Rojí</h2>
-                                <p><small>¡Hola! Soy Regina, tengo 25 años. Me importa mi paz mental, así que no te metas
+                                <p><small>¡Hola! Soy Regina, tengo 25 años. Me importa mi paz mental, así que no te
+                                        metas
                                         conmigo (no es cierto, es bromita).
                                         <br><br>
-                                        En mis tiempos libres me gusta mucho salir a pasear y tocar el piano. Últimamente le
-                                        agarré gusto al yoga aunque, si les soy sincera, apenas si me puedo tocar los pies.
+                                        En mis tiempos libres me gusta mucho salir a pasear y tocar el piano.
+                                        Últimamente le
+                                        agarré gusto al yoga aunque, si les soy sincera, apenas si me puedo tocar los
+                                        pies.
                                         <br><br>
-                                        Me gusta trabajar en mi crecimiento personal y sigo trabajando en desdramatizar el
+                                        Me gusta trabajar en mi crecimiento personal y sigo trabajando en desdramatizar
+                                        el
                                         fracaso y aplicar los 4 acuerdos en mi vida.
-    
-    
+
+
                                     </small></p>
                             </div>
                         </div>
@@ -483,7 +504,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="SofiaAcosta" aria-labelledby="compraLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content bg-opacity-50">
@@ -493,11 +514,13 @@
                                 <img src="../../global/assets/images/Sofía Acosta Neptuno.png" class="w-100" alt="">
                             </div>
                             <div class="col-5 my-auto">
-                                <h2 class="h3">Sofia Acosta</h2>
-                                <p><small>Es difícil escribir quién soy porque siento que no soy. Ser es definir y yo no soy
+                                <h2 class="h3">Sofia Aguilar</h2>
+                                <p><small>Es difícil escribir quién soy porque siento que no soy. Ser es definir y yo no
+                                        soy
                                         algo estático.
                                         <br><br>
-                                        Cómo protegerme de aquello que desconozco me supera. Por eso me esfuerzo, una y otra
+                                        Cómo protegerme de aquello que desconozco me supera. Por eso me esfuerzo, una y
+                                        otra
                                         y otra vez, para dirigir
                                         mis esfuerzos hacia las manifestaciones de lo que quiero ser, para construir
                                         proyectos que puedan seguir el día que no esté.
@@ -510,7 +533,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="modal fade" id="RosaCarrillo" aria-labelledby="compraLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content bg-opacity-50">
@@ -521,16 +544,20 @@
                             </div>
                             <div class="col-5 my-auto">
                                 <h2 class="h3">Rosa Carrillo</h2>
-                                <p><small>¡Hola, holaaa! Soy Rosy, tengo 27 años. Soy una chica super risueña y amiguera,
+                                <p><small>¡Hola, holaaa! Soy Rosy, tengo 27 años. Soy una chica super risueña y
+                                        amiguera,
                                         creativa y entusiasta que siempre está buscando algo nuevo que aprender.
-                                        Tu no estas para saberlo, ni yo para contártelo, pero el día que escuches mi voz..
+                                        Tu no estas para saberlo, ni yo para contártelo, pero el día que escuches mi
+                                        voz..
                                         quedarás hipnotizado.
                                         <br><br>
                                         No hay nada que me haga más feliz que pasar las tardes
-                                        mirando un cielo estrellado junto al mar (océano), y si piensas que es un cliché, es
+                                        mirando un cielo estrellado junto al mar (océano), y si piensas que es un
+                                        cliché, es
                                         más cliché que no salgas tú del antro feo ese al que siempre vas.
                                         <br><br>
-                                        Mi corazón está partido entre la tierra de las tortas de tamal y la tierra de las
+                                        Mi corazón está partido entre la tierra de las tortas de tamal y la tierra de
+                                        las
                                         mariposas monarca. </small></p>
                             </div>
                         </div>
@@ -540,7 +567,7 @@
         </div>
     </section>
     <!-- Fin de modal -->
-    
+
     <!-- Start of video-AboutUs section -->
     <section id="video-aboutUs" class="container py-5 mt-5">
         <h2 class="pb-5 text-center">Nuestra <strong>historia</strong></h2>
@@ -555,8 +582,8 @@
                                     <div class="video-container pd-2">
                                         <div class="video ratio ratio-16x9">
                                             <iframe class="container-fluid" width=" 660" height="415"
-                                                src="https://www.youtube.com/embed/w-PoV_sIWos" title="YouTube video player"
-                                                frameborder="0"
+                                                src="https://www.youtube.com/embed/w-PoV_sIWos"
+                                                title="YouTube video player" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                 allowfullscreen></iframe>
                                         </div>
@@ -580,9 +607,9 @@
             </div>
         </div>
     </section>
-    
+
     <!-- End of video-AboutUs section -->
-    
+
     <!--Start of Timeline-->
     <section id="timeline-aboutUs" class="timeline" style="margin-bottom: 10rem;">
         <div class="container">
@@ -591,12 +618,13 @@
                 <div class="timeline-content js--fadeInLeft">
                     <div class="date">29 NOV 2021</div>
                     <h3>Generation México</h3>
-                    <p class="text-white">Nuestro equipo inició con una capacitación como Desarrollador Java Full Stack donde comenzamos
+                    <p class="text-white">Nuestro equipo inició con una capacitación como Desarrollador Java Full Stack
+                        donde comenzamos
                         nuestras bases para poder iniciar con "Mentoritos"</p>
-    
+
                 </div>
             </div>
-    
+
             <div class="timeline-item">
                 <div class="point-line"></div>
                 <div class="timeline-content  js--fadeInRight">
@@ -604,13 +632,14 @@
                     <div class="pt-3">
                         <h3>Habilidades Blandas</h3>
                     </div>
-                    <p class="text-white">Desarrollamos nuestra comunicación con los demás para crear mejores relaciones humanas y laborales.
+                    <p class="text-white">Desarrollamos nuestra comunicación con los demás para crear mejores relaciones
+                        humanas y laborales.
                     </p>
-    
+
                 </div>
-    
+
             </div>
-    
+
             <div class="timeline-item">
                 <div class="point-line"></div>
                 <div class="timeline-content js--fadeInLeft">
@@ -618,9 +647,10 @@
                     <div>
                         <h3>Programación Frontend</h3>
                     </div>
-                    <p class="text-white">Creamos diseños agradables visualmente para que los usuarios de Mentoris disfruten la experiencia
+                    <p class="text-white">Creamos diseños agradables visualmente para que los usuarios de Mentoris
+                        disfruten la experiencia
                         visual con nosotros.</p>
-    
+
                 </div>
             </div>
             <div class="timeline-item">
@@ -630,11 +660,12 @@
                         <h3>Programación Backend</h3>
                     </div>
                     <div class="date">24 ENE 2022</div>
-                    <p class="text-white">Manejamos operaciones con bases de datos y autenticación de usuarios, siempre buscando nuevas ideas
+                    <p class="text-white">Manejamos operaciones con bases de datos y autenticación de usuarios, siempre
+                        buscando nuevas ideas
                         para proteger a nuestros usuarios de Mentoris.</p>
-    
+
                 </div>
-    
+
             </div>
             <div class="timeline-item">
                 <div class="point-line"></div>
@@ -643,19 +674,21 @@
                     <div>
                         <h3>Arquitectura Web</h3>
                     </div>
-                    <p class="text-white">Siempre buscando estructurar mejor nuestro código, separamos los archivos respondiendo el dónde y
-                        cómo los almacenamos. Pensamos que los cimientos son muy importantes para nuestra organización, por
+                    <p class="text-white">Siempre buscando estructurar mejor nuestro código, separamos los archivos
+                        respondiendo el dónde y
+                        cómo los almacenamos. Pensamos que los cimientos son muy importantes para nuestra organización,
+                        por
                         eso utilizamos una arquitectura basada en microservicios.</p>
-    
+
                 </div>
             </div>
-    
-    
-    
+
+
+
         </div>
     </section>
     <!--End of Timeline-->
-    
+
     <!-- contact form -->
     <section id="contact-form" class="space-between-sections">
         <div class="container">
@@ -693,7 +726,7 @@
         </div>
     </section>
     <!-- contact form -->
-    
+
     <!-- footer -->
     <footer>
         <div class="container">
@@ -725,14 +758,14 @@
         </div>
     </footer>
     <!-- footer -->
-    
+
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    
+
     <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
-    
+
     <!-- Scripts de facebook -->
     <script>
         window.fbAsyncInit = function () {
@@ -752,19 +785,19 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-    
-    
+
+
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0"
         nonce="A5p5aDYc"></script>
     <!-- Scripts de facebook -->
-    
+
     <!--Smtp JS-->
     <!-- <script src="https://smtpjs.com/v3/smtp.js">
             </script> -->
-    
+
     <!-- JS-->
     <script src="../js/aboutUs.js"></script>
 </body>
-    
+
 </html>
