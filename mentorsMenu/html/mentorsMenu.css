@@ -182,7 +182,7 @@ footer i {
 
 
 #mentorCard {
-    opacity: 0.5;
+   /* opacity: 0.5;*/
     transition: all 0.9s;
     
   }

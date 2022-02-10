@@ -139,6 +139,8 @@ function inputMentor(item,element,number=item.length) {
    <div class="col-6">
    <button type="button" class="btn btn-primary col-2" onclick=element()>borrar</button>
    <button type="button" class="btn btn-primary col-2" onclick=addItem()>agregar</button>
+   <button type="button" class="btn btn-primary col-2" >editar</button>
+   <button type="button" class="btn btn-primary col-2" data-bs-toggle="modal" data-bs-target="#ModalADD" data-bs-whatever="@mdo">Agregar</button>
    </div>
    </div>
    `+conten
