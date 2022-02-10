@@ -105,7 +105,7 @@
     <!--inicio de modal de mentors-cards -->
     <div class="modal fade" id="mentorsCards" aria-labelledby="compraLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content bg-dark">
+            <div class="modal-content bg-light">
                 <div class="modal-header">
                     <div class="card bg-dark text-white ">
                         <img src="" id="imageProfile" class="card-img-top" alt="imagen perfil">
@@ -120,6 +120,84 @@
         </div>
     </div>
     <!-- final de modal de  mentors-cards  -->
+
+
+    <!--inicio de modal para agregar un nuevo elemento al menu de mentores-->
+    
+    <div class="modal fade position-absolute top-50 end-50" id="ModalADD" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><b>Agrega un nuevo mentorito</b></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <form>
+
+                        <div class="form-row mb-3">
+                            <div class="col mb-3">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="col mb-3">
+                                <input type="text" class="form-control" placeholder="Apellido">
+                            </div>
+                        </div>
+
+                        <div class="form-group col-mb-3">
+                            <label for="inputState">Asignatura</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Selecciona..</option>
+                                <option value="1">Música</option>
+                                <option value="2">Matemáticas</option>
+                                <option value="3">Quimica</option>
+                                <option value="4">Canto</option>
+                                <option value="5">Pintura Óleo</option>
+                                <option value="6">Acuarela</option>
+                                <option value="7">Inglés</option>
+                                <option value="8">Danza Contemporanea</option>
+                                <option value="9">Programación</option>
+                                <option value="10">Electrónica</option>
+                            </select>
+                        </div>
+
+                        <br>
+
+                        <fieldset class="form-group row mb-3">
+                            <legend class="col-form-label col mb-3 float-sm-left pt-0">Modalidad</legend>
+                            <div class="col-9">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" checked
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">En linea</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Presencial</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <div class="form-group col">
+                            <label for="inputClass">Precio de la clase por Hora</label>
+                            <input type="text" class=" col-7 form-control" value="$0.00  MXN" aria-label="Dollar amount (with dot and two decimal places)">
+                        </div> 
+
+                    </form>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <!-- fin de modal para agregar un nuevo elemento al menu de mentores-->
 
     <!-- /Header -->
 
@@ -143,92 +221,45 @@
 
     <!--           cards de mentores           -->
     <section id="Cards-Mentores" class=" row justify-content-md-center py-3">
+        <p>Lorem ipsum dolor sit amet
+             eaque.</p>
+    </section>
+
+
+
+
+
+    <!-- pie de pagina -->
+
+    <!-- footer -->
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/mentorsMenu/html/Assets/mentor1.jpg" class="card-img-top" alt="user 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Maria campos</h5>
-                            <p class="card-text">Ofrece mentorias de matematicas <br> màs de 8 años de experiencia la
-                                respaldan.</p>
-                            <a href="#" class="btn btn-primary">Ver Perfil</a>
-                        </div>
-
-
-                    </div>
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5">Enseña con nosotros</a><br>
+                    <a href="" class="mb-0">FAQ</a><br>
+                    <a href="">Reportar malas prácticas</a>
                 </div>
-
-                <div class="col-12 col-sm-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/mentorsMenu/html/Assets/mentor2.png" class="card-img-top" alt="user 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Vanesa Corcuera</h5>
-                            <p class="card-text">Ofrece mentorias de matematicas <br> màs de 8 años de experiencia la
-                                respaldan.</p>
-                            <a href="#" class="btn btn-primary">Ver Perfil</a>
-                        </div>
-                    </div>
-
-
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5">Enseña con nosotros</a><br>
+                    <a href="" class="mb-0">FAQ</a><br>
+                    <a href="">Reportar malas prácticas</a>
                 </div>
-                <div class="col-12 col-sm-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/mentorsMenu/html/Assets/mentor3.jpg" class="card-img-top" alt="user 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Tom Salta</h5>
-                            <p class="card-text">Ofrece mentorias de matematicas <br> màs de 8 años de experiencia la
-                                respaldan.</p>
-                            <a href="#" class="btn btn-primary">Ver Perfil</a>
-                        </div>
-                    </div>
-
-
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5">Aviso de provacidad</a><br>
+                    <a href="" class="mb-0">Términos y condiciones</a><br>
                 </div>
-
-
-            </div>
-            <br>
-            <!-- segunda fila de cards de mentores-->
-            <div class="row">
-                <div class="col-12 col-sm-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/mentorsMenu/html/Assets/user4.jpeg" class="card-img-top" alt="user 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Jose Armando</h5>
-                            <p class="card-text">Ofrece mentorias de matematicas <br> màs de 8 años de experiencia la
-                                respaldan.</p>
-                            <a href="#" class="btn btn-primary">Ver Perfil</a>
-                        </div>
-                    </div>
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5"><i class="fab fa-facebook-square"></i></a>
+                    <a href="" class="mb-0"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
                 </div>
-
-                <div class="col-12 col-sm-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/mentorsMenu/html/Assets/mentor5.jpg" class="card-img-top" alt="user 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Lucia Soto</h5>
-                            <p class="card-text">Ofrece mentorias de matematicas <br> màs de 8 años de experiencia la
-                                respaldan.</p>
-                            <a href="#" class="btn btn-primary">Ver Perfil</a>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/mentorsMenu/html/Assets/mentor6.jpg" class="card-img-top" alt="user 6">
-                        <div class="card-body">
-                            <h5 class="card-title">Nuria Velazquez</h5>
-                            <p class="card-text">Ofrece mentorias de matematicas <br> màs de 8 años de experiencia la
-                                respaldan.</p>
-                            <a href="#" class="btn btn-primary">Ver Perfil</a>
-                        </div>
-                    </div>
-
-
-                </div>
+<<<<<<< HEAD
+=======
 
 
             </div>
@@ -269,6 +300,7 @@
                     <a href="" class="mb-0"><i class="fab fa-instagram"></i></a>
                     <a href=""><i class="fab fa-twitter-square"></i></a>
                 </div>
+>>>>>>> b52bc59a62719c5a6459fb520b8a57380f2801be
             </div>
         </div>
     </footer>
