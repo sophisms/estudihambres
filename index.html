@@ -11,13 +11,13 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- CSS style -->
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="./home/css/home.css">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    
+
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -26,45 +26,44 @@
 
 <body id="home-page">
     <!-- Navbar -->
-    <div id="navbar" class="mb-5 pt-3 container-fluid">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../../home/html/home.html">
-                    <img src="../../global/assets/images/meteorite2.jpg" alt="" width="50" class="d-inline-block align-text-middle">
-                    Mentoritos
-                </a>
-                <div class="ms-4">
-                    <form class="d-flex">
-                        <input class="form-control me-2 form-input rounded-pill" type="search" placeholder="Encontrar un mentor" aria-label="Search">
-                        <button class="btn btn-outline-success rounded-pill" type="submit">Buscar</button>
-                    </form>
-                </div>
-                <div class="collapse navbar-collapse me-1" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../mentorsMenu/html/mentorsMenu.html">mentores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../aboutUs/html/aboutUs.html">sobre nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../userProfile/html/userProfile.html">mi perfil</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <button class="btn ms-5 me-3 rounded-pill buttons">crea una cuenta</button>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#login" data-bs-toggle="modal" class="nav-link">inicia sesión</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./global/assets/images/meteorite2.jpg" alt=""
+                    width="50" class="d-inline-block align-text-middle">
+                Mentoritos</a>
+            <div class="ms-lg-4">
+                <form class="d-flex">
+                    <input class="form-control me-lg-2 form-input rounded-pill" type="search"
+                        placeholder="Encontrar un mentor" aria-label="Search">
+                    <button class="btn btn-outline-success rounded-pill" type="submit">Buscar</button>
+                </form>
             </div>
-        </nav>
-    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-end justify-content-sm-start"
+                id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./mentorsMenu/html/mentorsMenu.html">mentores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutUs/html/aboutUs.html">sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./userProfile/html/userProfile.html">mi perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn ms-lg-4 me-lg-3 rounded-pill buttons">crea una cuenta</button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#login" data-bs-toggle="modal" class="nav-link">inicia sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Navbar -->
 
     <!-- modal de login  -->
@@ -107,7 +106,7 @@
     <!-- modal de login  -->
 
     <!-- banner -->
-    <section id="banner" class="container text-center space-between-sections">
+    <section id="banner" class="container text-center space-between-sections pt-3 mt-3">
         <div class="row" id="banner-info">
             <!-- <div class="col-1">
                 Column
@@ -121,15 +120,18 @@
                 <div class="row my-4">
                     <div class="col">
                         <form class="d-flex">
-                            <input class="form-control me-2 rounded-pill form-input" type="search" placeholder="Encontar un mentor" aria-label="Search">
+                            <input class="form-control me-2 rounded-pill form-input" type="search"
+                                placeholder="Encontar un mentor" aria-label="Search">
                             <button class="btn btn-outline-success rounded-pill" type="submit">Buscar</button>
                         </form>
-                        <p id="link-join" class="text-end" style="margin-right: 120px !important;">¿Te gustaría enseñar? <a href="#" class="highlighted-text">Únete aquí</a></p>
+                        <p id="link-join" class="text-end" style="margin-right: 120px !important;">¿Te gustaría enseñar?
+                            <a href="#" class="highlighted-text">Únete aquí</a>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-5">
-                <img src="../../global/assets/images/planet.png" alt="">
+                <img src="./global/assets/images/planet.png" alt="">
             </div>
         </div>
         <div class="jumpdown-section">
@@ -150,9 +152,12 @@
             <div class="row mb-3">
                 <div class="col-8">
                     <h2>Sobre nosotros</h2>
-                    <p class="my-4">Somos una plataforma que funciona como un intermediario entre mentores y estudiantes con
-                        muchas ganas de compartir conocimiento ubicados en Guadalajara. </p>
-                    <p>Creemos que todos tienen un talento único, por eso brindamos la posibilidad a los estudiantes que dominen
+                    <p class="my-4">Somos una plataforma, con sede en Guadalajara, que funciona como un intermediario
+                        entre mentores con muchas ganas de compartir su conocimiento y estudiantes con hambre de
+                        aprender.
+                    </p>
+                    <p>Creemos que todos tienen un talento único, por eso brindamos la posibilidad a los estudiantes que
+                        dominen
                         un tema a compartir su conocimiento con otros por medio del programa <span
                             class="highlighted-text">Mentoritos</span>.</p>
                 </div>
@@ -161,12 +166,12 @@
                 <div class="col-1">
                 </div>
                 <div class="col">
-                    <img src="../../global/assets/images/Hyperspace Long Distance Call.png" class="img-fluid" alt="..."
+                    <img src="./global/assets/images/Hyperspace Long Distance Call.png" class="img-fluid" alt="..."
                         style="max-width: 50% !important;">
                 </div>
             </div>
             <div class="text-center">
-                <a class="btn ms-5 me-3 rounded-pill buttons mt-5" href="../../aboutUs/html/aboutUs.html">conócenos más</a>
+                <a class="btn ms-5 me-3 rounded-pill buttons mt-5" href="./aboutUs/html/aboutUs.html">conócenos más</a>
             </div>
         </div>
     </section>
@@ -180,7 +185,8 @@
                     <div class="col">
                         <label for="subject" class="mb-1">materia</label>
                         <br>
-                        <input type="text" list="subjects" id="subject" name="subject" class="rounded-pill px-3">
+                        <input type="text" list="subjects" id="subject" name="subject" class="rounded-pill px-3"
+                            placeholder="Busca materias">
                         <datalist id="subjects">
                             <option value="Matemáticas"></option>
                             <option value="Inglés"></option>
@@ -193,7 +199,8 @@
                     <div class="col">
                         <label for="modality" class="mb-1">modalidad</label>
                         <br>
-                        <input type="text" list="modalities" id="modality" name="modality" class="rounded-pill px-3">
+                        <input type="text" list="modalities" id="modality" name="modality" class="rounded-pill px-3"
+                            placeholder="Busca modalidades">
                         <datalist id="modalities">
                             <option value="Virtual"></option>
                             <option value="Presencial"></option>
@@ -202,7 +209,8 @@
                     <div class="col">
                         <label for="price" class="mb-1">precio</label>
                         <br>
-                        <input type="text" list="prices" id="price" name="price" class="rounded-pill px-3">
+                        <input type="text" list="prices" id="price" name="price" class="rounded-pill px-3"
+                            placeholder="Busca precios">
                         <datalist id="prices">
                             <option value="Menos de $100"></option>
                             <option value="$100 - $200"></option>
@@ -231,9 +239,13 @@
                 <div class="col-9">
                     <div id="carouselExampleIndicators" class="carousel slide pb-5" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color:black;"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color:black;"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color:black;"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"
+                                style="background-color:black;"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2" style="background-color:black;"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3" style="background-color:black;"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -241,12 +253,15 @@
                                     <div class="col-md-4">
                                         <div class="single-box">
                                             <div class="card mx-auto" style="width: 15rem;">
-                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <img src="./global/assets/images/mentor.jfif" class="card-img-top"
+                                                    alt="...">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Card title</h5>
-                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                    <p class="card-text">Some quick example text to build on the card
+                                                        title and make up the bulk of the card's
                                                         content.</p>
-                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go
+                                                        somewhere</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -254,12 +269,15 @@
                                     <div class="col-md-4">
                                         <div class="single-box">
                                             <div class="card mx-auto" style="width: 15rem;">
-                                                <img src="../../global/assets/images/mentor2.jpg" class="card-img-top" alt="...">
+                                                <img src="./global/assets/images/mentor.jfif" class="card-img-top"
+                                                    alt="...">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Card title</h5>
-                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                    <p class="card-text">Some quick example text to build on the card
+                                                        title and make up the bulk of the card's
                                                         content.</p>
-                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go
+                                                        somewhere</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -267,55 +285,15 @@
                                     <div class="col-md-4">
                                         <div class="single-box">
                                             <div class="card mx-auto" style="width: 15rem;">
-                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <img src="./global/assets/images/mentor.jfif" class="card-img-top"
+                                                    alt="...">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Card title</h5>
-                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                    <p class="card-text">Some quick example text to build on the card
+                                                        title and make up the bulk of the card's
                                                         content.</p>
-                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="single-box">
-                                            <div class="card mx-auto" style="width: 15rem;">
-                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Card title</h5>
-                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                                        content.</p>
-                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="single-box">
-                                            <div class="card mx-auto" style="width: 15rem;">
-                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Card title</h5>
-                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                                        content.</p>
-                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="single-box">
-                                            <div class="card mx-auto" style="width: 15rem;">
-                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Card title</h5>
-                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                                        content.</p>
-                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go
+                                                        somewhere</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -327,12 +305,15 @@
                                     <div class="col-md-4">
                                         <div class="single-box">
                                             <div class="card mx-auto" style="width: 15rem;">
-                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <img src="./global/assets/images/mentor.jfif" class="card-img-top"
+                                                    alt="...">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Card title</h5>
-                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                    <p class="card-text">Some quick example text to build on the card
+                                                        title and make up the bulk of the card's
                                                         content.</p>
-                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go
+                                                        somewhere</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -340,12 +321,15 @@
                                     <div class="col-md-4">
                                         <div class="single-box">
                                             <div class="card mx-auto" style="width: 15rem;">
-                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <img src="./global/assets/images/mentor.jfif" class="card-img-top"
+                                                    alt="...">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Card title</h5>
-                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                    <p class="card-text">Some quick example text to build on the card
+                                                        title and make up the bulk of the card's
                                                         content.</p>
-                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go
+                                                        somewhere</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -353,12 +337,67 @@
                                     <div class="col-md-4">
                                         <div class="single-box">
                                             <div class="card mx-auto" style="width: 15rem;">
-                                                <img src="../../global/assets/images/mentor.jfif" class="card-img-top" alt="...">
+                                                <img src="./global/assets/images/mentor.jfif" class="card-img-top"
+                                                    alt="...">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Card title</h5>
-                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                                    <p class="card-text">Some quick example text to build on the card
+                                                        title and make up the bulk of the card's
                                                         content.</p>
-                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go somewhere</a>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go
+                                                        somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="./global/assets/images/mentor.jfif" class="card-img-top"
+                                                    alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card
+                                                        title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go
+                                                        somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="./global/assets/images/mentor.jfif" class="card-img-top"
+                                                    alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card
+                                                        title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go
+                                                        somewhere</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="single-box">
+                                            <div class="card mx-auto" style="width: 15rem;">
+                                                <img src="./global/assets/images/mentor.jfif" class="card-img-top"
+                                                    alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">Some quick example text to build on the card
+                                                        title and make up the bulk of the card's
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary buttons rounded-pill">Go
+                                                        somewhere</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -478,25 +517,25 @@
             <div class="row row-categories">
                 <div class="col-md-2 col-4 px-1">
                     <div class="card subcategory text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Cocina\ japonesa.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Cocina\ japonesa.jpg);">
                         <p class="card-text">Cocina japonesa</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-8 px-1">
                     <div class="card category text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Fisica.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Fisica.jpg);">
                         <p class="card-text">Física</p>
                     </div>
                 </div>
                 <div class="col-md-2 col-4 px-1">
                     <div class="card subcategory text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Examen\ TOEFL.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Examen\ TOEFL.jpg);">
                         <p class="card-text">Examen toefl</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-8 px-1">
                     <div class="card category text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Guitarra.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Guitarra.jpg);">
                         <p class="card-text">Guitarra</p>
                     </div>
                 </div>
@@ -505,25 +544,25 @@
             <div class="row mt-4 row-categories">
                 <div class="col-md-4 col-8 px-1">
                     <div class="card category text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Canto.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Canto.jpg);">
                         <p class="card-text">Canto</p>
                     </div>
                 </div>
                 <div class="col-md-2 col-4 px-1">
                     <div class="card subcategory text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Programación-Csharp.jpg); background-position: 10% 0;">
+                        style="background-image: url(./global/assets/images/home/course-galery/Programación-Csharp.jpg); background-position: 10% 0;">
                         <p class="card-text">Programación en C#</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-8 px-1">
                     <div class="card category text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/yoga.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/yoga.jpg);">
                         <p class="card-text">Yoga</p>
                     </div>
                 </div>
                 <div class="col-md-2 col-4 px-1">
                     <div class="card subcategory text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Teatro.jpg); background-position: 50% 0;">
+                        style="background-image: url(./global/assets/images/home/course-galery/Teatro.jpg); background-position: 50% 0;">
                         <p class="card-text">Teatro</p>
                     </div>
                 </div>
@@ -532,25 +571,25 @@
             <div class="row mt-4 row-categories">
                 <div class="col-md-2 col-4 px-1">
                     <div class="card subcategory text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Geogrfía.jpg);  background-position: 10% 0;">
+                        style="background-image: url(./global/assets/images/home/course-galery/Geogrfía.jpg);  background-position: 10% 0;">
                         <p class="card-text">Geografía</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-8 px-1">
                     <div class="card category text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Pintura.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Pintura.jpg);">
                         <p class="card-text">Pintura</p>
                     </div>
                 </div>
                 <div class="col-md-2 col-4 px-1">
                     <div class="card subcategory text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Partitura.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Partitura.jpg);">
                         <p class="card-text">Solfeo</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-8 px-1">
                     <div class="card category text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Cálculo.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Cálculo.jpg);">
                         <p class="card-text">Cálculo</p>
                     </div>
                 </div>
@@ -559,25 +598,25 @@
             <div class="row mt-4 row-categories">
                 <div class="col-md-4 col-8 px-1">
                     <div class="card category text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Idiomas.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Idiomas.jpg);">
                         <p class="card-text">Idiomas</p>
                     </div>
                 </div>
                 <div class="col-md-2 col-4 px-1">
                     <div class="card subcategory text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/LoL.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/LoL.jpg);">
                         <p class="card-text">LoL</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-8 px-1">
                     <div class="card category text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Cocina.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Cocina.jpg);">
                         <p class="card-text">Cocina</p>
                     </div>
                 </div>
                 <div class="col-md-2 col-4 px-1">
                     <div class="card subcategory text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Programación\ Java.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Programación\ Java.jpg);">
                         <p class="card-text">Programación en Java</p>
                     </div>
                 </div>
@@ -586,25 +625,25 @@
             <div class="row mt-4 row-categories">
                 <div class="col-md-2 col-4 px-1">
                     <div class="card subcategory text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Diseño-personaje.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Diseño-personaje.jpg);">
                         <p class="card-text">Diseño de personaje</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-8 px-1">
                     <div class="card category text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Ballet.jpg); background-position: 80% 0;">
+                        style="background-image: url(./global/assets/images/home/course-galery/Ballet.jpg); background-position: 80% 0;">
                         <p class="card-text">Ballet</p>
                     </div>
                 </div>
                 <div class="col-md-2 col-4 px-1">
                     <div class="card subcategory text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Photoshop.jfif); background-position: 50% 0;">
+                        style="background-image: url(./global/assets/images/home/course-galery/Photoshop.jfif); background-position: 50% 0;">
                         <p class="card-text">Photshop</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-8 px-1">
                     <div class="card category text-center"
-                        style="background-image: url(../../global/assets/images/home/course-galery/Fotografía.jpg);">
+                        style="background-image: url(./global/assets/images/home/course-galery/Fotografía.jpg);">
                         <p class="card-text">Fotografía</p>
                     </div>
                 </div>
@@ -624,7 +663,8 @@
             <div class="row">
                 <div class="col">
                     <div class="mx-auto" style="width: 700px;">
-                        <h3 class="text-center">Agradecemos tu tiempo para comunicarte con Mentoritos. ¿Cómo podemos ayudarte?</h3>
+                        <h3 class="text-center">Agradecemos tu tiempo para comunicarte con Mentoritos. ¿Cómo podemos
+                            ayudarte?</h3>
                     </div>
                 </div>
             </div>
@@ -638,7 +678,8 @@
                             <br>
                             <input class="mb-4" type="email" placeholder="Correo" name="e-mail" required>
                             <br>
-                            <textarea class="my-4" name="messsage" id="" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+                            <textarea class="my-4" name="messsage" id="" cols="30" rows="5" placeholder="Mensaje"
+                                required></textarea>
                             <br>
                             <button type="submit" class="btn rounded-pill buttons">enviar</button>
                         </form>
