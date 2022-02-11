@@ -141,16 +141,7 @@ function inputMentor(item,element,plus=truc,number=item.length) {
         star=""
     }
     document.getElementById(`${element}`).innerHTML=plus+conten
-    document.getElementById(`${element}`).innerHTML=`
-   <div class="col-12 row g-0 justify-content-around" >
-   <div class="col-6">
-   <button type="button" class="btn btn-primary col-2" onclick=element()>borrar</button>
-   <button type="button" class="btn btn-primary col-2" onclick=addItem()>agregar</button>
-   <button type="button" class="btn btn-primary col-2" >editar</button>
-   <button type="button" class="btn btn-primary col-2" data-bs-toggle="modal" data-bs-target="#ModalADD" data-bs-whatever="@mdo">Agregar</button>
-   </div>
-   </div>
-   `+conten
+   
 }
 let bot=`
 <div class="col-12 row g-0 justify-content-around" >
