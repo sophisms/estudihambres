@@ -120,6 +120,62 @@
         </div>
     </div>
     <!-- final de modal de  mentors-cards  -->
+<!--inicio de modal para agregar un nuevo elemento al menu de mentores-->
+    
+    <div class="modal fade " id="ModalADD" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><b>Agrega un nuevo mentorito</b></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <form>
+
+                        <div class="form-row mb-3">
+                            <div class="col mb-3">
+                                <input id="name" type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="col mb-3">
+                                <input id="lastName" type="text" class="form-control" placeholder="Apellido">
+                            </div>
+                        </div>
+
+                        <div class="form-group col-mb-3">
+                            <label for="inputClas">Asignatura</label>
+                            <select id="inputClas" class="form-control">
+                                <option selected>Selecciona..</option>
+                                <option value="Música">Música</option>
+                                <option value="Matemáticas">Matemáticas</option>
+                                <option value="Quimica">Quimica</option>
+                                <option value="Canto">Canto</option>
+                                <option value="Pintura Óleo">Pintura Óleo</option>
+                                <option value="Acuarela">Acuarela</option>
+                                <option value="Inglés">Inglés</option>
+                                <option value="Danza Contemporanea">Danza Contemporanea</option>
+                                <option value="Programación">Programación</option>
+                                <option value="Electrónica">Electrónica</option>
+                            </select>
+                        </div>
+
+                        <br>
+
+                        <fieldset class="form-group row mb-3">
+                            <legend class="col-form-label col mb-3 float-sm-left pt-0">Modalidad</legend>
+                            <div class="col-9">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" checked
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">En linea</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2" disabled>
+                                    <label class="form-check-label" for="inlineCheckbox2" >Presencial</label>
+                                </div>
+                            </div>
+                        </fieldset>
 
 
     <!--inicio de modal para agregar un nuevo elemento al menu de mentores-->
@@ -189,7 +245,7 @@
                 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send message</button>
+                    <button type="button" class="btn btn-primary" onclick=catchValueNew()  data-bs-dismiss="modal" >Send message</button>
                    </div>
                 </div>
             </div>
@@ -198,7 +254,6 @@
   
 
     <!-- fin de modal para agregar un nuevo elemento al menu de mentores-->
-
     <!-- /Header -->
 
     <!-- introduccion carrusel de mentores  -->
@@ -231,9 +286,10 @@
 
     <!-- pie de pagina -->
 
-    <!-- footer -->
-    <footer>
-        <div class="container">
+            </div>
+<br>
+            segunda fila de cards de mentores
+            
             <div class="row">
                 <div class="col py-5">
                     <br>
@@ -258,13 +314,11 @@
                     <a href="" class="mb-0"><i class="fab fa-instagram"></i></a>
                     <a href=""><i class="fab fa-twitter-square"></i></a>
                 </div>
-<<<<<<< HEAD
-=======
 
 
             </div>
 
-        </div>
+        </div> -->
     </section>
 
 
@@ -300,7 +354,6 @@
                     <a href="" class="mb-0"><i class="fab fa-instagram"></i></a>
                     <a href=""><i class="fab fa-twitter-square"></i></a>
                 </div>
->>>>>>> b52bc59a62719c5a6459fb520b8a57380f2801be
             </div>
         </div>
     </footer>
