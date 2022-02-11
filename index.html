@@ -131,7 +131,7 @@
                 </div>
             </div>
             <div class="col-5">
-                <img src="./global/assets/images/planet.png" alt="">
+                <img src="../../global/assets/images/planet.png" id="planet1" alt="">
             </div>
         </div>
         <div class="jumpdown-section">
@@ -734,6 +734,26 @@
             interval: 80
         }); */
 
+    </script>
+
+    <script>
+
+let animacion = document.querySelectorAll("#planet1");
+
+function mostrarScroll() {
+  let scrollTop = document.documentElement.scrollTop;
+  for (var i = 0; i < animacion.length; i++) {
+    let altura = animacion[i].offsetTop;
+    if (altura - 300 < scrollTop) {
+     // animacion[i].style.opacity = 1;
+     
+      animacion[i].classList.add("mostrarArriba");
+     
+    }
+  }
+}
+
+window.addEventListener('mousemove', mostrarScroll);
     </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

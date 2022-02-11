@@ -118,8 +118,8 @@ function inputMentor(item,element,plus=truc,number=item.length) {
             }
         }
         conten += `
-        <div name="item" class=" m-3 position-relative" style="width: 18rem;">
-        <a href="#mentorsCards" data-bs-toggle="modal" onclick= ConstructorModal(${index}) href="#">
+        <div name="item" class=" m-3 position-relative"  id= "mentorCard" style="width: 18rem;">
+        <a href="#mentorsCards" data-bs-toggle="modal" onclick=ConstructorModal(${index}) href="#">
      <img src="${item[index].img}" class="  card-img-top"  data-bs-toggle="mentorsCards"  alt="..." style="border-radius: 30px;">
      </a>
     <div class="card-body position-absolute bottom-0  bg-dark bg-opacity-50 text-white col-12" style="width: 16.5rem; border-bottom-left-radius:30px; border-bottom-right-radius:30px;">
@@ -141,6 +141,16 @@ function inputMentor(item,element,plus=truc,number=item.length) {
         star=""
     }
     document.getElementById(`${element}`).innerHTML=plus+conten
+    document.getElementById(`${element}`).innerHTML=`
+   <div class="col-12 row g-0 justify-content-around" >
+   <div class="col-6">
+   <button type="button" class="btn btn-primary col-2" onclick=element()>borrar</button>
+   <button type="button" class="btn btn-primary col-2" onclick=addItem()>agregar</button>
+   <button type="button" class="btn btn-primary col-2" >editar</button>
+   <button type="button" class="btn btn-primary col-2" data-bs-toggle="modal" data-bs-target="#ModalADD" data-bs-whatever="@mdo">Agregar</button>
+   </div>
+   </div>
+   `+conten
 }
 let bot=`
 <div class="col-12 row g-0 justify-content-around" >
