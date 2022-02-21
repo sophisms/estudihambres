@@ -202,42 +202,91 @@
 
     <!-- introduccion carrusel de mentores  -->
     <div class="container" id="home">
-
+    
         <div class="text-center mt-3" style="color: black">
             <h2>Elige a tu <strong style="color: var(--colorSecondarySubtitle);">mentorito</strong> favorito</h2>
-            <p>Aquí podrás encontrar una amplia variedad de mentores listos para acompañarte en tu proceso de aprendizaje.</p>
-
-            
+            <p>Aquí podrás encontrar una amplia variedad de mentores listos para acompañarte en tu proceso de aprendizaje.
+            </p>
+    
+    
         </div>
 
+                       <!---En esta seccion va el filtro de busqueda -->
+        <div class="row">
+            <div class="col-4">
+                <div class="form-group ">
+                    <label form="inputClas"> Filtrar por Asignatura</label>
+                    <select id="FilterClass" class="form-control">
+                        <option selected>Selecciona..</option>
+                        <option value="Música">Música</option>
+                        <option value="Matemáticas">Matemáticas</option>
+                        <option value="Quimica">Quimica</option>
+                        <option value="Canto">Canto</option>
+                        <option value="Pintura Óleo">Pintura Óleo</option>
+                        <option value="Acuarela">Acuarela</option>
+                        <option value="Inglés">Inglés</option>
+                        <option value="Danza Contemporanea">Danza Contemporanea</option>
+                        <option value="Programación">Programación</option>
+                        <option value="Electrónica">Electrónica</option>
+                    </select>
+                </div>
+             
+            </div>
+
+            <div class="col-4">
+                <div class="form-group ">
+                    <label form="inputClas"> Estrellas</label>
+                    <select id="FilterStars" class="form-control">
+                        <option selected>Selecciona..</option>
+                        <option value="1">1 Estrella</option>
+                        <option value="2">2 Estrellas</option>
+                        <option value="3">3 Estrellas</option>
+                        <option value="4">4 Estrellas</option>
+                        <option value="5">5 Estrellas</option>
+                        
+                    </select>
+                </div>
+             
+            </div>
+
+            <div class="col-2 mt-4">
+                <button type="button" class="btn btn-primary" onclick=catchValueFilter() >Filtrar</button>
+            </div>
+            <div class="col-2 mt-4">
+                <button type="button" class="btn btn-primary" onclick= ClearSearch(); >Limpiar busqueda</button>
+            </div>
+    
+    
+        </div>
+    
     </div>
     <!-- introduccion -->
-
-
+    
+    
     <!-- pie de pagina -->
-   
-
+    
+    
     <!--           cards de mentores           -->
     <section id="Cards-Mentores" class=" row justify-content-md-center position-relative py-3">
-
+    
     </section>
-
-
-
-
-
+    
+    
+    
+    
+    
     <!-- pie de pagina -->
-
-   <!-- footer -->
-   <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col py-5">
-                <br>
-                <a href="" class="mb-0 pt-5">Enseña con nosotros</a><br>
-                <a href="" class="mb-0">FAQ</a><br>
-                <a href="">Reportar malas prácticas</a>
-            </div>
+    
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col py-5">
+                    <br>
+                    <a href="" class="mb-0 pt-5">Enseña con nosotros</a><br>
+                    <a href="" class="mb-0">FAQ</a><br>
+                    <a href="">Reportar malas prácticas</a>
+                </div>
             <div class="col py-5">
                 <br>
                 <a href="" class="mb-0 pt-5">Enseña con nosotros</a><br>
