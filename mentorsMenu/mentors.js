@@ -187,6 +187,7 @@ function element() {
     let cont=truc+`
     <div class="col-12 row g-0 justify-content-around pb-2" height="24px">
     <button type="button" class="btn btn-primary col-1" data-bs-toggle="modal" data-bs-target="#ModalADD" data-bs-whatever="@mdo">Agregar</button>
+    <input type="search" placeholder="buscar..." class="card-filter col-1">
     <button type="button" class="btn btn-danger col-1" onclick=abort()>Cancelar</button>
     </div>`
     getStorage("mentor",(el)=>{inputMentor(el.items,"Cards-Mentores",cont)})
@@ -333,4 +334,160 @@ function getOptionClass(name,opClass=optionClass){
         }
     };
     return (cont)
+} 
+
+
+/*    funciones de filtro de busqueda     */ 
+
+
+                                  /*filtro  , filtrado value */
+function getOptionSearchBar(CategoryOption, Categoryvalue, item = mentor.items){
+
+
+    let cont = [];
+    let banderaStar = 0;
+    let banderaClass = 0;
+
+
+    if( Categoryvalue.star != "Selecciona.."){
+
+        banderaStar = 1;
+
+    }
+    
+    if( Categoryvalue.class != "Selecciona.."){
+
+        banderaClass = 1;
+    }
+    
+    
+    if( banderaClass == 1 && banderaStar == 0) {
+
+        for (let el = 0; el < item.length; el++) {
+            if(Categoryvalue.class ==item[el].class){
+
+                 cont.push(item[el]);
+                  // cont[index][variable] = item;
+                 
+
+                }
+            
+        }
+
+    }
+
+
+    if( banderaClass == 0 && banderaStar == 1) {
+
+        for (let el = 0; el < item.length; el++) {
+            if(Categoryvalue.star ==item[el].star){
+
+                 cont.push(item[el]);
+                  // cont[index][variable] = item;
+                 
+
+                }
+            
+        }
+
+    }
+
+
+    if( banderaClass == 1 && banderaStar == 1) {
+
+        for (let el = 0; el < item.length; el++) {
+            if(Categoryvalue.star ==item[el].star && Categoryvalue.class ==item[el].class){
+
+                 cont.push(item[el]);
+                  // cont[index][variable] = item;
+                 
+
+                }
+            
+        }
+
+    }
+/*
+        for (let el = 0; el < item.length; el++) {
+            if(Categoryvalue ==item[el][`${CategoryOption}`]){
+
+                 cont.push(item[el]);
+                  // cont[index][variable] = item;
+                 
+
+                }
+            
+        }
+*/
+
+
+        inputMentor(cont,"Cards-Mentores");
+        
+    
+    //return (cont)
+    console.log(cont);
 }
+
+
+
+function catchValueFilter(id,items=mentor.items){
+    
+    let clas=document.getElementById("FilterClass");
+    let starsS=document.getElementById("FilterStars");
+    let filtro = ["star", "class"];
+
+    let filtrado={
+        
+         star: `${starsS.value}`
+        ,class:`${clas.value}`
+         
+        
+    }
+    
+    
+    getOptionSearchBar(filtro,filtrado);
+
+}
+
+
+function ClearSearch(){
+
+    let cont = [];
+    cont = mentor.items;
+
+    inputMentor(cont,"Cards-Mentores");
+
+}
+
+
+/*
+// search placeholder 
+function getOptionSearchBar(...CategoryOption, item=mentor.items){
+    let cont = [];
+
+    for (let index = 0; index < CategoryOption.length; index++) {
+        
+        for (let el = 0; el < item.length; el++) {
+            if(CategoryOption[index].Paramdata==item[el][`${CategoryOption[index].prop}`]){
+
+                 cont.push(item[el]);
+                  // cont[index][variable] = item;
+
+                }
+            
+        };
+        
+    }
+    //return (cont)
+    console.log(cont);
+}
+
+let param=[{Paramdata:5,prop:"stars"}]//,{Paramdata:"mate",prop:"class"},{Paramdata:"musica",prop:"class"}] 
+
+
+getOptionSearchBar(param);
+
+
+*/
+
+
