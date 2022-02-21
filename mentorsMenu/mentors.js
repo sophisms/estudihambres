@@ -1,4 +1,4 @@
-let mentor={
+let info={
     items:[
         {
             name:"Luis"
@@ -93,6 +93,27 @@ let mentor={
         }
     ]
 }
+function setStorage(value) {
+    let cont=JSON.stringify(value)
+    localStorage.setItem("mentor",cont)
+}
+function first(valu){
+    let cont 
+    getStorage('mentor',(el)=>cont=el)
+    if (cont==undefined) {
+        setStorage(info)
+    } 
+}
+first()
+let mentor=[]
+
+function getStorage(key,call){
+    let cont = JSON.parse(localStorage.getItem(key))
+    
+     call(cont)
+}
+
+getStorage('mentor',(el)=>mentor=el)
 let truc=`
 <div class="col-1 position-absolute top-0 end-0" height="24px">
 <img src="../cog-solid.svg" height="24px" alt="start" onclick=element()>
@@ -143,39 +164,24 @@ function inputMentor(item,element,plus=truc,number=item.length) {
     document.getElementById(`${element}`).innerHTML=plus+conten
    
 }
-let bot=`
-<div class="col-12 row g-0 justify-content-around" >
-<div class="col-6">
-<button type="button" class="btn btn-primary col-2" onclick=element()>borrar</button>
-<button type="button" class="btn btn-primary col-2" onclick=addItem()>agregar</button>
-</div>
-</div>
-`;
-
-
-inputMentor(mentor.items,"Cards-Mentores")
-
-let ne= {
-    name:"mayrelin"
-    ,img:"https://images.pexels.com/photos/5794945/pexels-photo-5794945.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    ,star:5
-    ,class:"matematicas"
-    ,modality:"en linea"
-    ,price:30
-}
+// inputMentor(mentor.items,"Cards-Mentores");
+getStorage("mentor",(el)=>{inputMentor(el.items,"Cards-Mentores")})
 
 
 function putStart(id,num){
     mentor.items[id].star=num
-    inputMentor(mentor.items,"Cards-Mentores")
+    setStorage(mentor)
+    getStorage("mentor",(el)=>{inputMentor(el.items,"Cards-Mentores")})
 }
 
 function deleteItem(id,object=mentor.items) {
     object.splice(id, 1);
-    inputMentor(mentor.items,"Cards-Mentores")
+    setStorage(mentor)
+    getStorage("mentor",(el)=>{inputMentor(el.items,"Cards-Mentores")})
+
 }
 function abort() {
-    inputMentor(mentor.items,"Cards-Mentores")
+    getStorage("mentor",(el)=>{inputMentor(el.items,"Cards-Mentores")})
 }
 function element() {
     let cont=truc+`
@@ -183,7 +189,7 @@ function element() {
     <button type="button" class="btn btn-primary col-1" data-bs-toggle="modal" data-bs-target="#ModalADD" data-bs-whatever="@mdo">Agregar</button>
     <button type="button" class="btn btn-danger col-1" onclick=abort()>Cancelar</button>
     </div>`
-    inputMentor(mentor.items,"Cards-Mentores",cont)
+    getStorage("mentor",(el)=>{inputMentor(el.items,"Cards-Mentores",cont)})
     let item=document.getElementsByName("item")
     item.forEach((items,index)=>{
         let cont=items.innerHTML
@@ -275,7 +281,9 @@ function ModalEdit( id, array = mentor.items ){
         ,price:price.value
     }
     items[id]=cont
-    inputMentor(mentor.items,"Cards-Mentores")
+    setStorage(mentor)
+    getStorage("mentor",(el)=>{inputMentor(el.items,"Cards-Mentores")})
+
 }
 function catchValueNew(items=mentor.items){
     let imgs="https://thumbs.dreamstime.com/b/omita-el-icono-del-perfil-avatar-placeholder-gris-de-la-foto-99724602.jpg"
@@ -284,7 +292,7 @@ function catchValueNew(items=mentor.items){
     let last=document.getElementById("lastName")
     let clas=document.getElementById("inputClas")
     let price=document.getElementById("Price")
-    console.log(clas.value)
+   
     let cont={
         name:`${name.value}`
         ,lastName:`${last.value}`
@@ -295,8 +303,8 @@ function catchValueNew(items=mentor.items){
         ,price:price.value
     }
     items.push(cont)
-    console.log(items)
-   inputMentor(items,"Cards-Mentores")
+    setStorage(mentor)
+    getStorage("mentor",(el)=>{inputMentor(el.items,"Cards-Mentores")})
    imgs="",name="",last="",clas="",price=""
   
 }
